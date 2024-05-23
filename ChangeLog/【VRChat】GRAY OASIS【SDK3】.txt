@@ -10,6 +10,7 @@ v1.1.0
 
     - Improved
         ライティングの軽微な調整
+        ビルトインライトマッパーに対応したシーンのブループリントIDをデタッチ(https://github.com/MAGURO-git/ProductArchive/issues/5)
 
     - Changed
         より多くのテクスチャデータをMEGAストレージに移行
