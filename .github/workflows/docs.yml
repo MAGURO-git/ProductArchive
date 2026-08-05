@@ -24,6 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # 「最終更新」を Git 履歴から出すため全履歴を取得する
+          # （浅いクローンだと全ページがチェックアウト日になる）
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"

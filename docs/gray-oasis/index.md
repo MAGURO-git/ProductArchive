@@ -5,6 +5,7 @@
 コンクリートの空間にプールと居住スペースを備えた VRChat ワールドです。
 
 - 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/items/5749183)
+- サンプルワールド: [通常版](https://vrchat.com/home/world/wrld_a62dd01c-80ad-4bf6-a651-166a0a395482) ／ [ビルトインライトマッパー版](https://vrchat.com/home/world/wrld_00fab39d-75bb-4b3f-b7a5-c948db3edf61)
 
 !!! info "このドキュメントについて"
     最新の内容はこのページで公開しています。価格・利用規約・サポート期間などの販売条件については、BOOTH の商品ページの記載が優先されます。
@@ -17,6 +18,7 @@
 | VRChat SDK | Worlds SDK 3 |
 | ライティング | Bakery - GPU Lightmapper でベイク済み。Bakery を持っていない場合はビルトインライトマッパー版を使用 |
 | 主要シェーダー | Filamented Standard for Unity |
+| ワールド容量 | 約180MB |
 
 必須アセットの一覧と入手先は [導入](install.md) を参照してください。
 

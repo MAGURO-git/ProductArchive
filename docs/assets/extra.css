@@ -123,19 +123,42 @@
   height: 20px;
 }
 
-/* 製品アイコンは説明文の左に並べる。上の枠線はスクリーンショット向けなので外す。 */
+/* 製品一覧の1件ぶん。左にサムネイル、右に説明とリンクを積む。
+   flex だと画像を含む段落が縮んでサムネイルの幅が製品ごとに揃わないため、グリッドで固定する。 */
 .md-typeset .product-hero {
-  display: flex;
-  align-items: center;
-  gap: 1em;
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 0.4em 1.2em;
+  align-items: start;
 }
 
 .md-typeset .product-hero > p {
   margin: 0;
 }
 
+.md-typeset .product-hero > p:first-child {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.md-typeset .product-hero > p:not(:first-child) {
+  grid-column: 2;
+}
+
 .md-typeset .product-icon {
-  flex: 0 0 auto;
-  width: 88px;
+  width: 100%;
   border: none;
+  border-radius: 4px;
+}
+
+/* 画面が狭いときは縦積みにする（横並びだと説明文が潰れる）。 */
+@media screen and (max-width: 600px) {
+  .md-typeset .product-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .product-hero > p:first-child {
+    grid-row: auto;
+    max-width: 130px;
+  }
 }

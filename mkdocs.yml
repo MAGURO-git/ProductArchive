@@ -52,6 +52,13 @@ extra_css:
 plugins:
   - search:
       lang: ja
+  # 各ページ下部の「最終更新」。Git のコミット日時から出すので手で書かない。
+  # CI 側は actions/checkout に fetch-depth: 0 が必要（浅いクローンだと全ページ同じ日付になる）。
+  - git-revision-date-localized:
+      type: date
+      locale: ja
+      enable_creation_date: false
+      fallback_to_build_date: true
 
 # 新製品を追加するときのひな形。サイトには出力しない。
 exclude_docs: |
@@ -60,6 +67,7 @@ exclude_docs: |
 # 製品を追加するときは、ここに 1 ブロック足す（docs/<製品スラッグ>/ を作る）。
 nav:
   - ホーム: index.md
+  - 利用規約: terms.md
   - GRAY OASIS:
       - gray-oasis/index.md
       - 導入: gray-oasis/install.md
