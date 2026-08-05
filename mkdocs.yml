@@ -92,6 +92,7 @@ nav:
       - 更新履歴: apartment/changelog.md
   - ハンドグレネードギミック:
       - hand-grenade/index.md
+      - 導入: hand-grenade/install.md
       - 更新履歴: hand-grenade/changelog.md
   - 無人航空機 / UAV:
       - uav/index.md

@@ -61,7 +61,7 @@ Sci-fi な部屋の VRChat 向けワールド。アバターなどを展示で�
 
 PhysBone を掴んで固定すると手榴弾のエフェクトが出るアバター用ギミック。Modular Avatar 対応。
 
-[更新履歴](hand-grenade/changelog.md)
+[導入手順](hand-grenade/install.md) ／ [更新履歴](hand-grenade/changelog.md)
 </div>
 
 ### [無人航空機 / UAV](uav/index.md)
