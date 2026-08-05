@@ -167,12 +167,6 @@
   grid-column: 2;
 }
 
-.md-typeset .product-icon {
-  width: 100%;
-  border: none;
-  border-radius: 4px;
-}
-
 /* 画面が狭いときは縦積みにする（横並びだと説明文が潰れる）。 */
 @media screen and (max-width: 600px) {
   .md-typeset .product-hero {
@@ -183,4 +177,46 @@
     grid-row: auto;
     max-width: 130px;
   }
+}
+
+/* トップの製品一覧。サムネイルを主役にして、文字は製品名とバッジだけに絞る。
+   説明を各製品ページへ寄せることで、6件を1画面に収める。 */
+.md-typeset .product-grid {
+  display: grid;
+  /* rem はテーマ側で 1rem = 20px になっているため、列幅は px で指定する。
+     本文カラム幅では3列、スマートフォンでは2列に落ちる。 */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.7rem;
+  margin: 1em 0;
+}
+
+.md-typeset .product-card > * {
+  margin: 0;
+}
+
+.md-typeset .product-card > p:first-child {
+  line-height: 0;
+}
+
+/* サムネイルは製品ごとに縦横比がぶれることがあるので、正方形に切り揃える。 */
+.md-typeset .product-icon {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: none;
+  border-radius: 4px;
+}
+
+/* 見出しの縦線は節の切れ目を示すためのもの。カード内では邪魔になるので外す。 */
+.md-typeset .product-card h3 {
+  margin-top: 0.4em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding-left: 0;
+  border-left: none;
+}
+
+.md-typeset .product-card .badge {
+  margin-top: 0.25em;
 }
