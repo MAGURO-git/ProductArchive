@@ -123,6 +123,27 @@
   height: 20px;
 }
 
+/* 対応プラットフォームのバッジ。VRChat 向けかどうかを一目で分かるようにする。 */
+.md-typeset .badge {
+  display: inline-block;
+  padding: 0.05em 0.6em;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 1em;
+  font-size: 0.72em;
+  font-weight: 700;
+  line-height: 1.7;
+  white-space: nowrap;
+  vertical-align: 0.12em;
+  color: var(--md-default-fg-color--light);
+}
+
+/* VRChat で使えるものは塗って目立たせる。使えないものは枠線のみ。 */
+.md-typeset .badge--vrc {
+  border-color: transparent;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
 /* 製品一覧の1件ぶん。左にサムネイル、右に説明とリンクを積む。
    flex だと画像を含む段落が縮んでサムネイルの幅が製品ごとに揃わないため、グリッドで固定する。 */
 .md-typeset .product-hero {

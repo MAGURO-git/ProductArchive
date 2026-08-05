@@ -1,5 +1,7 @@
 # ハンドグレネードギミック
 
+<span class="badge badge--vrc">VRChat アバター</span>
+
 PhysBone（スカートやアホ毛など）を掴んで固定すると、手榴弾のパーティクルエフェクトが発生するアバター用ギミックです。Modular Avatar に対応しています。
 
 - 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/items/6215675)

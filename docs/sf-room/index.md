@@ -1,5 +1,7 @@
 # SF-ROOM for VRC
 
+<span class="badge badge--vrc">VRChat ワールド</span>
+
 Sci-fi な部屋の VRChat 向けワールドです。アバターなどをディスプレイできる昇降機が付いています。
 
 - 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/items/2053652)

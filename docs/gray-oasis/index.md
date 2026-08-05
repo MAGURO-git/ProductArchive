@@ -1,5 +1,7 @@
 # GRAY OASIS
 
+<span class="badge badge--vrc">VRChat ワールド</span>
+
 ![GRAY OASIS](images/key-visual.png)
 
 コンクリートの空間にプールと居住スペースを備えた VRChat ワールドです。

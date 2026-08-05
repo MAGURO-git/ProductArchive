@@ -1,5 +1,7 @@
 # Japan Classroom
 
+<span class="badge badge--vrc">VRChat ワールド</span>
+
 日本の高校の教室をイメージした VRChat 向けワールドです。朝・夕・夜の3シーンが入っています。
 
 - 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/items/5464478)
