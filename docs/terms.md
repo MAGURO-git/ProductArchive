@@ -20,7 +20,7 @@
 | [Japan Classroom](japan-classroom/index.md) | 可 | 可 | 不可 | 可 |
 | [SF-ROOM for VRC](sf-room/index.md)（SDK3データ） | 可 | 可 | 不可 | 可 |
 | [SF-ROOM for VRC](sf-room/index.md)（SDK2データ） | 可 | 可 | 不可（例外あり） | 可 |
-| [Apartment for VRC](apartment/index.md) | 可 | 可 | 不可（例外あり） | **不可** |
+| [Apartment for VRC](apartment/index.md) | 可 | 可 | 不可（例外あり） | 可 |
 | [ハンドグレネードギミック](hand-grenade/index.md) | 可 | 可 | 不可 | — |
 | [無人航空機 / UAV](uav/index.md) | 可 | 可 | 不可 | — |
 
