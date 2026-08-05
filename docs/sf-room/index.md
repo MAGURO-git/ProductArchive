@@ -26,6 +26,7 @@ Sci-fi な部屋の VRChat 向けワールドです。アバターなどをデ�
 
 | 項目 | SDK2 データ | SDK3 データ |
 |---|---|---|
+| 適用される規約 | [UV ライセンス](https://uv-license.com/ja/license?utf8=%E2%9C%93&pcu=true&ccu=true&seu=true&veu=true&remarks=true) | [ショップ共通規約](../terms.md) |
 | 2名までの共有（再配布の例外） | 可 | 不可 |
 | パブリック化 | 可 | 可 |
 

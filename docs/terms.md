@@ -12,7 +12,12 @@
 
 ## 製品ごとの条件（簡易版）
 
-商品ごとに個別の利用規約がある場合は、そちらが優先します。
+下表は各製品の主な条件です。**特記のない製品には、このページの共通規約がそのまま適用されます。**
+
+共通規約とは別の規約が適用されるのは、現在この2つだけです。
+
+- **[Apartment for VRC](apartment/index.md)** — [専用の利用規約](apartment/terms.md)。R-18 / R-18G を含むコンテンツでの利用ができます（例外あり）
+- **[SF-ROOM for VRC](sf-room/index.md) の SDK2 データ** — [UV ライセンス](https://uv-license.com/ja/license?utf8=%E2%9C%93&pcu=true&ccu=true&seu=true&veu=true&remarks=true)。SDK3 データは共通規約です
 
 | 製品 | 商用利用 | 改変 | 再配布 | パブリック化 |
 |---|---|---|---|---|
@@ -28,8 +33,6 @@
 
 !!! info "「不可（例外あり）」について"
     Apartment for VRC と SF-ROOM for VRC の SDK2 データは、**購入者本人を含む2名まで**であれば、同じデータを共有して制作できます（追加の購入は不要）。
-
-Apartment for VRC は [専用の利用規約](apartment/terms.md) を定めており、R-18 / R-18G を含むコンテンツでの利用ができます（例外あり）。
 
 ---
 

@@ -5,6 +5,40 @@
   text-wrap: pretty;
 }
 
+/* サイドバーは .md-typeset の外なので上の指定が効かず、「ドキュメ／ント」のように
+   語の途中で折り返される。keep-all で日本語のまとまりを保つ。 */
+.md-nav__title,
+.md-nav__link {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+/* デスクトップではヘッダーに同じサイト名が出ているので、サイドバー上部の見出しは重複。
+   モバイルではドロワーの見出しとして必要なので、広い画面でだけ隠す。 */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary .md-nav--primary > .md-nav__title {
+    display: none;
+  }
+}
+
+/* サイドバーは「ホーム・利用規約」と「製品」が同じ見た目で並ぶため、どこからが製品か
+   分からない。折りたたみ項目（製品）の先頭に区切りと見出しを入れて、群を分ける。
+   最初の製品は「非折りたたみ項目の直後にある折りたたみ項目」で特定できる。 */
+.md-nav--primary
+  > .md-nav__list
+  > .md-nav__item:not(.md-nav__item--nested)
+  + .md-nav__item--nested::before {
+  content: "製品";
+  display: block;
+  margin-top: 0.9rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--md-default-fg-color--light);
+}
+
 /* 識別子やパスは文節では割れないので、コードは既定の折り返しに戻す。 */
 .md-typeset code,
 .md-typeset pre {

@@ -12,7 +12,6 @@ theme:
   favicon: assets/favicon.png
   features:
     - navigation.tracking
-    - navigation.sections
     - navigation.top
     - navigation.indexes
     - search.suggest
