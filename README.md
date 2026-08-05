@@ -19,4 +19,4 @@ BOOTHショップ「[M.G.R Tech Creations](https://maguro-vrc.booth.pm/)」で�
 
 ## お問い合わせ
 
-不具合や不明点は、[BOOTH](https://maguro-vrc.booth.pm/) のメッセージ機能からご連絡ください（ご購入者さま対象）。
+不具合や不明点は、[BOOTH](https://maguro-vrc.booth.pm/) のメッセージ機能からご連絡ください。

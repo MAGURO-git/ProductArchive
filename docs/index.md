@@ -64,6 +64,6 @@ BOOTHショップ **[M.G.R Tech Creations](https://maguro-vrc.booth.pm/)** で�
 
 ## お問い合わせ
 
-製品の不具合や不明点は、**BOOTH のメッセージ機能**からご連絡ください（ご購入者さま対象）。基本的な VRChat / Unity の操作方法についてはご案内していません。
+製品の不具合や不明点は、**BOOTH のメッセージ機能**からご連絡ください。基本的な VRChat / Unity の操作方法についてはご案内していません。
 
 ショップ: <https://maguro-vrc.booth.pm/>
