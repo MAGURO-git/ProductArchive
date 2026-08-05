@@ -1,16 +1,21 @@
 # 導入
 
-導入手順の動画を公開しています。
+!!! warning "この手順は SDK3 対応時点（2022年9月）のものです"
+    当時のバージョンを前提に、unitypackage を手動で順に入れる形になっています。現在の VRChat SDK や VCC / ALCOM を使った導入とは手順が異なります。現行環境での動作確認は行っていません。
+
+導入手順の動画を公開しています。画面の流れはこちらが分かりやすいです。
 
 <https://youtu.be/DsbDUshHiPU>
 
-## 1. プロジェクトを作成する
+## 手順の概要
 
-新しいプロジェクトを作成します。
+1. 新しいプロジェクトを作成する
+2. 下記のアセットを**上から順に**インポートする
+3. `Apartment_SDK3.unitypackage` をインポートする
+4. UdonToolkit を設定する（Edit ＞ Project Settings から）
+5. シーンを開き、ワールド名・キャパシティ・サムネイルを設定してアップロードする
 
-## 2. 必要なアセットを順にインポートする
-
-**この順番でインポートしてください。**
+## インポートするアセット
 
 | 順 | アセット | 入手先 |
 |---|---|---|
@@ -20,15 +25,4 @@
 | 4 | 【VRC向け】iwaSync3 メディアプレイヤー | [BOOTH](https://booth.pm/ja/items/2666275) |
 | 5 | Crystal Water FX - Flowing Water Shader | [BOOTH](https://tsunamoo.booth.pm/items/3469326) |
 
-!!! note "記載のバージョンについて"
-    上の一覧は、本製品が SDK3 に対応した時点（2022年9月）の構成です。
-
-## 3. Apartment をインポートする
-
-`Apartment_SDK3.unitypackage` をインポートします。
-
-## 4. UdonToolkit を設定する
-
-## 5. シーンを開いてアップロードする
-
-シーンを開き、「Build and Upload」を実行します。
+同梱の unitypackage とあわせて、利用規約のテキストファイルも入っています。
