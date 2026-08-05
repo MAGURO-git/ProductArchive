@@ -1,6 +1,6 @@
 # 無人航空機 / UAV
 
-<span class="badge">Unity 向け3Dモデル</span>
+<span class="badge">Unity 3D Model</span>
 
 Unity での使用を想定した無人航空機の3Dモデルです。ギア格納とプロペラ回転のアニメーションが付属します。VRChat のワールド向けにはセットアップしていません。
 

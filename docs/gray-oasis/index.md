@@ -1,6 +1,6 @@
 # GRAY OASIS
 
-<span class="badge badge--vrc">VRChat ワールド</span>
+<span class="badge badge--vrc">VRChat World</span>
 
 ![GRAY OASIS](images/key-visual.png)
 

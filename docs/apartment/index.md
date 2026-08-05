@@ -1,6 +1,6 @@
 # Apartment for VRC
 
-<span class="badge badge--vrc">VRChat ワールド</span>
+<span class="badge badge--vrc">VRChat World</span>
 
 高級アパートの内装の3Dモデルです。同梱の導入手順に沿ってセットアップすると、VRChat のワールドとして使えます。
 

@@ -157,9 +157,10 @@
   margin: 0;
 }
 
+/* 右側は「バッジ／説明／リンク」の3行。サムネイルはその全体に対して縦に通す。 */
 .md-typeset .product-hero > p:first-child {
   grid-column: 1;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
 }
 
 .md-typeset .product-hero > p:not(:first-child) {
