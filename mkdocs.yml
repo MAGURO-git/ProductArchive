@@ -88,6 +88,7 @@ nav:
       - 更新履歴: sf-room/changelog.md
   - Apartment for VRC:
       - apartment/index.md
+      - 導入: apartment/install.md
       - 更新履歴: apartment/changelog.md
   - ハンドグレネードギミック:
       - hand-grenade/index.md

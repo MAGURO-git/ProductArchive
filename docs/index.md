@@ -49,7 +49,7 @@ Sci-fi な部屋の VRChat 向けワールド。アバターなどを展示で�
 
 高級アパートの内装の3Dモデル。VRChat のワールドとして使えます。
 
-[更新履歴](apartment/changelog.md)
+[導入手順](apartment/install.md) ／ [更新履歴](apartment/changelog.md)
 </div>
 
 ### [ハンドグレネードギミック](hand-grenade/index.md)
