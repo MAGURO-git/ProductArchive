@@ -4,13 +4,13 @@
 
 ![GRAY OASIS](images/key-visual.png)
 
-コンクリートの空間にプールと居住スペースを備えた VRChat ワールドです。
+地下の秘密基地をイメージした、インダストリアルな内装の VRChat 向けワールドです。
 
 - 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/items/5749183)
 - サンプルワールド: [通常版](https://vrchat.com/home/world/wrld_a62dd01c-80ad-4bf6-a651-166a0a395482) ／ [ビルトインライトマッパー版](https://vrchat.com/home/world/wrld_00fab39d-75bb-4b3f-b7a5-c948db3edf61)
 
 !!! info "このドキュメントについて"
-    価格・利用規約などの販売条件については、BOOTH の商品ページの記載が優先されます。
+    利用規約は [利用規約](../terms.md) にまとめています。価格などの販売条件は BOOTH の商品ページをご確認ください。
 
 ## 必要環境
 

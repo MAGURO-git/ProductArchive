@@ -2,7 +2,7 @@
 
 <span class="badge">Unity 3D Model</span>
 
-Unity での使用を想定した無人航空機の3Dモデルです。ギア格納とプロペラ回転のアニメーションが付属します。VRChat のワールド向けにはセットアップしていません。
+Unity での使用を想定した無人航空機の3Dモデルです。ギア格納とプロペラ回転のアニメーションが付属します。
 
 - 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/items/5400255)
 

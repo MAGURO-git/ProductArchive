@@ -11,7 +11,7 @@ BOOTHショップ **[M.G.R Tech Creations](https://maguro-vrc.booth.pm/)** で�
 
 <span class="badge badge--vrc">VRChat World</span>
 
-コンクリートの空間にプールと居住スペースを備えた VRChat ワールド。
+地下の秘密基地をイメージした、インダストリアルな内装の VRChat 向けワールド。
 
 [導入手順](gray-oasis/install.md) ／ [ギミック一覧](gray-oasis/gimmicks.md) ／ [使用アセット](gray-oasis/credits.md)
 </div>
