@@ -1,0 +1,141 @@
+/* 日本語の折り返し。既定の禁則処理だけだと行末で機械的に折られ、最終行に「ん。」のような
+   1〜2文字だけが残る。対応ブラウザでは文節単位で折り、最終行が極端に短くなるのも避ける。 */
+.md-typeset {
+  word-break: auto-phrase;
+  text-wrap: pretty;
+}
+
+/* 識別子やパスは文節では割れないので、コードは既定の折り返しに戻す。 */
+.md-typeset code,
+.md-typeset pre {
+  word-break: normal;
+}
+
+/* 既定のテーマは見出しの主張が弱く、節の切れ目が本文に埋もれる。
+   マニュアルは拾い読みされるので、h1〜h3 をはっきり分ける。 */
+
+.md-typeset h1 {
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h2 {
+  font-weight: 700;
+  font-size: 1.45rem;
+  margin-top: 2.4em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid var(--md-primary-fg-color);
+}
+
+/* スクリーンショットは Unity の暗い画面なのでページ背景に溶ける。枠を付けて本文と分ける。 */
+.md-typeset img {
+  max-width: 100%;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 4px;
+}
+
+.md-typeset h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 1.8em;
+  padding-left: 0.5em;
+  border-left: 4px solid var(--md-default-fg-color--lighter);
+}
+
+/* ブランドロゴはマーク＋M.G.R の縦組み。既定の 1.2rem では潰れるので、
+   ヘッダーを広げてロゴ全体が読める高さを確保する。 */
+.md-header__button.md-logo img,
+.md-nav__button.md-logo img {
+  width: auto;
+  height: 3.2rem;
+}
+
+.md-header__button.md-logo {
+  padding: 0.4rem 0.6rem;
+}
+
+/* よくある質問。質問と回答が同じ字面だと対が読み取れないので、質問は大きく、
+   回答は一段下げて色を落とす。Q. / A. の目印は本文に書かずここで付ける。 */
+.md-typeset dl dt {
+  margin-top: 2em;
+  font-size: 1.05em;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset dl dt::before,
+.md-typeset dl dd::before {
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em;
+  font-weight: 700;
+  color: var(--md-accent-fg-color);
+}
+
+.md-typeset dl dt::before {
+  content: "Q.";
+}
+
+.md-typeset dl dd::before {
+  content: "A.";
+}
+
+.md-typeset dl dt,
+.md-typeset dl dd {
+  padding-left: 1.5em;
+}
+
+.md-typeset dl dd {
+  margin: 0.5em 0 0;
+  color: var(--md-default-fg-color--light);
+}
+
+/* 暗色・明色の2表は別々に列幅が決まるため、そのままだと見本の位置がずれる。列幅を固定して揃える。
+   1列目は最長のテーマ名（コントロールルーム（既定））が折り返さない幅にしないと、
+   そこだけ列が広がって表どうしがずれる。 */
+.md-typeset .theme-table table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.md-typeset .theme-table th:first-child,
+.md-typeset .theme-table td:first-child {
+  width: 15em;
+}
+
+.md-typeset .theme-table th:nth-child(2),
+.md-typeset .theme-table td:nth-child(2) {
+  width: 8em;
+}
+
+/* テーマの配色見本。明色テーマの白がページ背景に溶けるので、帯の外周に枠を付ける。 */
+.md-typeset .sw {
+  display: inline-flex;
+  vertical-align: -0.35em;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.md-typeset .sw i {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+/* 製品アイコンは説明文の左に並べる。上の枠線はスクリーンショット向けなので外す。 */
+.md-typeset .product-hero {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.md-typeset .product-hero > p {
+  margin: 0;
+}
+
+.md-typeset .product-icon {
+  flex: 0 0 auto;
+  width: 88px;
+  border: none;
+}

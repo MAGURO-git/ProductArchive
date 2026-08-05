@@ -1,0 +1,68 @@
+site_name: M.G.R Tech Creations ドキュメント
+site_description: BOOTHショップ「M.G.R Tech Creations」販売物のマニュアル
+site_url: https://maguro-git.github.io/ProductArchive/
+repo_url: https://github.com/MAGURO-git/ProductArchive
+edit_uri: ""
+
+theme:
+  name: material
+  language: ja
+  # ショップのブランドロゴ。ヘッダーは常に暗色なのでマーク単体の白版を置く。
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  features:
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: ダークモードに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードに切り替え
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: false
+
+extra_css:
+  - assets/extra.css
+
+plugins:
+  - search:
+      lang: ja
+
+# 新製品を追加するときのひな形。サイトには出力しない。
+exclude_docs: |
+  _template/
+
+# 製品を追加するときは、ここに 1 ブロック足す（docs/<製品スラッグ>/ を作る）。
+nav:
+  - ホーム: index.md
+  - GRAY OASIS:
+      - gray-oasis/index.md
+      - 導入: gray-oasis/install.md
+      - ギミック一覧: gray-oasis/gimmicks.md
+      - 使用アセット: gray-oasis/credits.md
+      - 更新履歴: gray-oasis/changelog.md

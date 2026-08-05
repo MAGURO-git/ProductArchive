@@ -1,0 +1,12 @@
+# MkDocs のビルド成果物（GitHub Actions 側で生成する）
+/site/
+
+# 未発売商品のローカルプレビュー用（商品名を公開したくないので、除外設定は
+# .git/info/exclude 側に書く。このファイルは公開される）。
+/mkdocs.local.yml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
