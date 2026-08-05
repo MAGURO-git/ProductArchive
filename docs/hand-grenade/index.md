@@ -34,4 +34,4 @@ Prefab をアバター直下に置き、発火させたい PhysBone を設定し
 | 改変 | 可 |
 | 再配布 | 不可 |
 
-正式な利用条件は[規約全文](https://drive.google.com/drive/folders/1pLcx18DQoFpwCZh_F2Y6LUG_pOl5QvFB?usp=drive_link)を確認してください。
+正式な利用条件は [利用規約](../terms.md) を確認してください。

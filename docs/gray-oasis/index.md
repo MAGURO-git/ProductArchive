@@ -20,6 +20,7 @@
 | VRChat SDK | Worlds SDK 3 |
 | ライティング | Bakery - GPU Lightmapper でベイク済み。Bakery を持っていない場合はビルトインライトマッパー版を使用 |
 | 主要シェーダー | Filamented Standard for Unity |
+| VRC Light Volumes | 1.2.0 から対応（必須アセット） |
 | ワールド容量 | 約180MB |
 
 必須アセットの一覧と入手先は [導入](install.md) を参照してください。

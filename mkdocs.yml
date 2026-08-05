@@ -89,6 +89,8 @@ nav:
   - Apartment for VRC:
       - apartment/index.md
       - 導入: apartment/install.md
+      - 使用アセット: apartment/credits.md
+      - 利用規約: apartment/terms.md
       - 更新履歴: apartment/changelog.md
   - ハンドグレネードギミック:
       - hand-grenade/index.md

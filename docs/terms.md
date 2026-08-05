@@ -29,7 +29,7 @@
 !!! info "「不可（例外あり）」について"
     Apartment for VRC と SF-ROOM for VRC の SDK2 データは、**購入者本人を含む2名まで**であれば、同じデータを共有して制作できます（追加の購入は不要）。
 
-Apartment for VRC は [専用の利用規約](https://docs.google.com/spreadsheets/d/1frp2qE5BP6009qW-P5lpX8KDs2rw0WihObpckiOGC3c/edit?usp=sharing) を定めており、R-18 / R-18G を含むコンテンツでの利用ができます（例外あり）。
+Apartment for VRC は [専用の利用規約](apartment/terms.md) を定めており、R-18 / R-18G を含むコンテンツでの利用ができます（例外あり）。
 
 ---
 
