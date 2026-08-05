@@ -9,13 +9,17 @@ BOOTHショップ「[M.G.R Tech Creations](https://maguro-vrc.booth.pm/)」で�
 | 製品 | ドキュメント |
 |---|---|
 | GRAY OASIS | [マニュアル](https://maguro-git.github.io/ProductArchive/gray-oasis/) |
+| Japan Classroom | [マニュアル](https://maguro-git.github.io/ProductArchive/japan-classroom/) |
+| SF-ROOM for VRC | [マニュアル](https://maguro-git.github.io/ProductArchive/sf-room/) |
+| Apartment for VRC | [マニュアル](https://maguro-git.github.io/ProductArchive/apartment/) |
+| ハンドグレネードギミック | [マニュアル](https://maguro-git.github.io/ProductArchive/hand-grenade/) |
+| 無人航空機 / UAV | [マニュアル](https://maguro-git.github.io/ProductArchive/uav/) |
 
-マニュアルが未整備の製品は、更新履歴のみ[こちら](https://maguro-git.github.io/ProductArchive/)に掲載しています。
+マニュアルが未整備の製品は、更新履歴のみ[サイト](https://maguro-git.github.io/ProductArchive/)に掲載しています。
 
 ## お問い合わせ
 
-不具合報告・導入のご相談は、ご購入者さまを対象に BOOTH のメッセージ機能で受け付けています。
-このリポジトリの Issues では受け付けていません。
+不具合や不明点は、各商品ページに記載の窓口までご連絡ください（商品によって窓口が異なります）。
 
 ---
 
