@@ -66,3 +66,12 @@ nav:
       - ギミック一覧: gray-oasis/gimmicks.md
       - 使用アセット: gray-oasis/credits.md
       - 更新履歴: gray-oasis/changelog.md
+  # マニュアル未整備の製品は、更新履歴だけ先に置いてある。
+  # マニュアルを書いたらこの節から出して、製品ごとのブロックへ移す。
+  - 更新履歴:
+      - Japan Classroom: japan-classroom/changelog.md
+      - SF-ROOM for VRC: sf-room/changelog.md
+      - Light Set: light-set/changelog.md
+      - Apartment for VRC: apartment/changelog.md
+      - ハンドグレネードギミック: hand-grenade/changelog.md
+      - 無人航空機UAV: uav/changelog.md

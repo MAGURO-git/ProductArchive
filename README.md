@@ -1,17 +1,16 @@
 # ProductArchive
 
-BOOTHショップ「M.G.R Tech Creations」で販売しているデータの管理に使用するリポジトリです。
-https://maguro-vrc.booth.pm/
+BOOTHショップ「[M.G.R Tech Creations](https://maguro-vrc.booth.pm/)」で販売している製品の、マニュアルと更新履歴を公開するリポジトリです。製品データそのものは含みません。
 
 ## ドキュメントサイト
-
-製品のマニュアルをここで公開しています。
 
 **https://maguro-git.github.io/ProductArchive/**
 
 | 製品 | ドキュメント |
 |---|---|
 | GRAY OASIS | [マニュアル](https://maguro-git.github.io/ProductArchive/gray-oasis/) |
+
+マニュアルが未整備の製品は、更新履歴のみ[こちら](https://maguro-git.github.io/ProductArchive/)に掲載しています。
 
 ## お問い合わせ
 
@@ -27,7 +26,7 @@ https://maguro-vrc.booth.pm/
 │  ├─ index.md              製品一覧のトップページ
 │  ├─ _template/            新製品追加用のひな形（サイトには出力されない）
 │  └─ <製品スラッグ>/        製品ごとのマニュアル
-├─ ChangeLog/               旧製品の更新履歴テキスト
+├─ ChangeLog/               更新履歴の原本テキスト（旧リンク向けに残置。内容は docs/ 側と同じ）
 ├─ mkdocs.yml               サイト設定・ナビゲーション
 ├─ requirements.txt         ビルドに使う Python パッケージ
 └─ .github/workflows/       main への push でサイトを自動更新
