@@ -98,6 +98,18 @@ nav:
   - 無人航空機 / UAV:
       - uav/index.md
       - 更新履歴: uav/changelog.md
+  # 開発中（未発売）。発売したら他の製品と同じ並びへ移す。
+  - Staff Bridge System:
+      - staff-bridge-system/index.md
+      - スタッフの方へ: staff-bridge-system/for-staff.md
+      - 導入: staff-bridge-system/install.md
+      - 基本の使い方: staff-bridge-system/usage.md
+      - 設定リファレンス: staff-bridge-system/reference.md
+      - 見た目のカスタマイズ: staff-bridge-system/customize.md
+      - 運用ガイド: staff-bridge-system/operation.md
+      - トラブルシューティング: staff-bridge-system/troubleshoot.md
+      - よくある質問: staff-bridge-system/faq.md
+      - 更新履歴: staff-bridge-system/changelog.md
   # マニュアル未整備の製品は、更新履歴だけ先に置いてある。
   - 更新履歴:
       - Light Set: light-set/changelog.md
