@@ -15,6 +15,15 @@ VCC / ALCOM のプロジェクト設定から追加してください。**2つ�
 !!! info "FukuroUdon のバージョンについて"
     インカムは FukuroUdon の PlayerAudio Master（`PlayerAudioSupervisor` 等）の上に構築されており、内部実装を参照しています。**動作確認済みバージョンは 3.18.0** です。導入後はバージョンを固定し、更新する場合は先に診断と実機確認を行ってください。
 
+### TMP Essentials をインポートする { #tmp-essentials }
+
+日本語フォントを機能させるには、TextMesh Pro の **TMP Essentials** が必要です。TextMesh Pro を一度も使っていないプロジェクトには入っていません。
+
+メニューバーから **Window ＞ TextMeshPro ＞ Import TMP Essential Resources** を実行してください（**Edit ＞ Project Settings ＞ TextMesh Pro** の画面からも実行できます）。`Assets/TextMesh Pro/` が作られれば完了です。すでに TextMesh Pro を使っているプロジェクトなら、この手順は不要です。
+
+!!! warning "入れ忘れると、診断が OK でも文字が出ません"
+    TMP Essentials が無いと TMP の設定ファイルそのものが作られないため、日本語フォールバックの設定が入りません。セットアップウィンドウの診断はパッケージの導入有無だけを見ているので、この状態でも「日本語フォント: 導入済み」と表示されます。文字が出ないときは、まずここを確認してください。
+
 ### 前提パッケージのライセンスについて
 
 本製品は動作に FukuroUdon（MIT License）と TextMesh Pro VRC Fallback Font JP（SIL Open Font License）を利用します。いずれも本製品には同梱しておらず、各配布ページから各自で導入していただく形です。
