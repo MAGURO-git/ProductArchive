@@ -13,7 +13,7 @@ VRChat ワールド用のイベント運営支援ギミック一式です。テ�
 
 - 商品ページ: 準備中
 - 利用規約: [Staff Bridge System 利用規約（PDF）](https://drive.google.com/file/d/1Y1xBQFlrfcBY5iI4gYFHOwRgYQo4pm7a/view?usp=sharing)
-- サンプルワールド: 準備中
+- サンプルワールド: [Staff Bridge System Sample（VRChat）](https://vrchat.com/home/world/wrld_01cbbb48-44ce-4761-9baa-6f4ef87fbbfd/info)
 
 ## できること
 
