@@ -230,33 +230,11 @@
 !!! warning "重要な操作は送り先でも検証してください"
     Udon のイベントは技術的には誰からでも呼べます。入退場のロック解除のような重大な操作は、送り先のギミック側でも呼び出し元を確認する作りにしてください。
 
-### 全員の画面に反映したいとき { #trigger-global }
+### 送り先での反映範囲 { #trigger-global }
 
-イベントを送るのは**押した本人のクライアントだけ**です。全員へ届けるかどうかは送り先が決めます。送り先の負荷が読めないまま人数ぶんに増やさないための切り分けです。
+イベントを送るのは**押した本人のクライアントだけ**です。全員の画面に反映するかどうかは送り先のギミックが決めます。送り先の負荷が読めないまま人数ぶんに増やさないための切り分けです。
 
-GameObject の出し入れなら、同梱の [StaffObjectToggle](#object-toggle) の **同期する** を ON にするだけで済みます。
-
-花火や効果音のように**状態を持たない一度きりの演出**を全員に見せたい場合は、送り先が自分で配ります。送り先を書き換えられないギミックなら、あいだに中継を1つ置いてください。
-
-```csharp
-using UdonSharp;
-using UnityEngine;
-using VRC.Udon.Common.Interfaces;
-
-[UdonBehaviourSyncMode(BehaviourSyncMode.None)]
-public class 中継 : UdonSharpBehaviour
-{
-    public UdonSharpBehaviour 送り先;
-    public string イベント名;
-
-    // スイッチの「イベント名」にはこちらを書く
-    public void Fire() { SendCustomNetworkEvent(NetworkEventTarget.All, nameof(Run)); }
-
-    public void Run() { 送り先.SendCustomEvent(イベント名); }
-}
-```
-
-この中継はスイッチの門番・連打防止を通りません。連打されると人数ぶんの実行が重なるので、必要なら中継側でも間隔を制限してください。
+GameObject の出し入れなら、同梱の [StaffObjectToggle](#object-toggle) の **同期する** を ON にしてください。それ以外のギミックを全員へ届ける方法は、そのギミックの作りによります。
 
 最後に発火した内容はパネルに表示され続け、あとから入室した人にも同じ内容が見えます。
 
