@@ -61,11 +61,10 @@ VRChat ワールド用のイベント運営支援ギミック一式です。テ�
 |---|---|
 | Unity | 2022.3.22f1 |
 | VRChat SDK | Worlds SDK 3.10.x 以降 |
-| 日本語フォント | [tmp-fallback-fonts-jp](https://github.com/Narazaka/tmp-fallback-fonts-jp)（**必須**） |
-| FukuroUdon | [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（**必須**・動作確認済み 3.18.0） |
+| FukuroUdon | [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（**必須**・動作確認済み 3.19.5） |
 | プラットフォーム | PC 専用（Quest 実機での動作確認は行っていません） |
 
-前提パッケージ2つは VCC / ALCOM から導入できます。詳しくは [導入](install.md) を参照してください。
+FukuroUdon は VCC / ALCOM から導入できます。詳しくは [導入](install.md) を参照してください。
 
 !!! tip "当日のスタッフへ渡すページ"
     [スタッフの方へ](for-staff.md) は、ワールド内での操作だけを説明したページです。Unity の用語は出てきません。当日のスタッフにはこの URL を渡してください。
@@ -82,7 +81,7 @@ VRChat ワールド用のイベント運営支援ギミック一式です。テ�
 
 **PC 専用です。** Quest 実機での動作確認は行っていません。
 
-**前提パッケージが2つ必要です。** FukuroUdon と日本語フォントは同梱していません。どちらも無料で、VCC / ALCOM から導入できます。
+**前提パッケージが必要です。** FukuroUdon は同梱していません。無料で、VCC / ALCOM から導入できます。
 
 **スイッチが保証するのは「イベントを1回送る」ところまでです。** 送り先のギミックが全員の画面で同じ状態になるかどうかは、送り先の作りによります。GameObject の出し入れなら同梱の `StaffObjectToggle` で足ります。
 

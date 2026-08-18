@@ -2,18 +2,19 @@
 
 ## 1. 前提パッケージを導入する
 
-VCC / ALCOM のプロジェクト設定から追加してください。**2つとも必須**です。
+VCC / ALCOM のプロジェクト設定から **FukuroUdon** を追加してください。
 
 | パッケージ | 用途 | 配布元 |
 |---|---|---|
-| `net.narazaka.vrchat.tmp-fallback-fonts-jp` | メニューの日本語表示 | [Narazaka/tmp-fallback-fonts-jp](https://github.com/Narazaka/tmp-fallback-fonts-jp) |
 | `com.mimylab.fukuroudon` | インカムの音声基盤（PlayerAudio） | [mimyquality/FukuroUdon](https://github.com/mimyquality/FukuroUdon) |
+
+メニューの日本語表示に使うフォント `net.narazaka.vrchat.tmp-fallback-fonts-jp` は、FukuroUdon の依存パッケージとして一緒に導入されます。個別に追加する必要はありません。
 
 !!! warning "インカムを使わない場合も必要です"
     同梱の Prefab が両パッケージのアセットを参照しています。日本語フォントが無いとメニューの文字が表示されず、FukuroUdon が無いとインカムが生成されません。
 
 !!! info "FukuroUdon のバージョンについて"
-    インカムは FukuroUdon の PlayerAudio Master（`PlayerAudioSupervisor` 等）の上に構築されており、内部実装を参照しています。**動作確認済みバージョンは 3.18.0** です。導入後はバージョンを固定し、更新する場合は先に診断と実機確認を行ってください。
+    インカムは FukuroUdon の PlayerAudio Master（`PlayerAudioSupervisor` 等）の上に構築されており、内部実装を参照しています。**動作確認済みバージョンは 3.19.5** です。導入後はバージョンを固定し、更新する場合は先に診断と実機確認を行ってください。
 
 ### TMP Essentials をインポートする { #tmp-essentials }
 
