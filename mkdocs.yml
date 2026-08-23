@@ -101,6 +101,7 @@ nav:
   # 開発中（未発売）。発売したら他の製品と同じ並びへ移す。
   - Staff Bridge System:
       - staff-bridge-system/index.md
+      - 機能一覧: staff-bridge-system/features.md
       - スタッフの方へ: staff-bridge-system/for-staff.md
       - 導入: staff-bridge-system/install.md
       - 基本の使い方: staff-bridge-system/usage.md

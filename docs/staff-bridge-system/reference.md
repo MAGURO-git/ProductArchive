@@ -54,7 +54,7 @@
 
 ---
 
-## StaffIncomRadio（インカム）
+## StaffIncomRadio（インカム） { #incom }
 
 チャンネルの参加・離脱と発話を担当します。同じチャンネルのメンバーの発話だけが、距離に関係なく聞こえます。
 
@@ -102,7 +102,7 @@
 
 ---
 
-## StaffMegaphone（メガホン）
+## StaffMegaphone（メガホン） { #megaphone }
 
 長押ししている間だけ、来場者を含む全員へ声を届けます。インカムのチャンネル機構の外を通るため、無線とは競合しません。
 
@@ -115,7 +115,7 @@
 
 ---
 
-## StaffBroadcast（一斉メッセージ）
+## StaffBroadcast（一斉メッセージ） { #broadcast }
 
 定型文をスタッフへ一斉送信します。受信側は[通知ログ](#notice-log)・通知音・受信ログで受け取ります。サーバー時刻を見て、レイトジョイン時に古いメッセージが再表示されるのを防いでいます。
 
@@ -294,7 +294,7 @@ GameObject の出し入れなら、同梱の [StaffObjectToggle](#object-toggle)
 
 ---
 
-## StaffGrantPanel（スタッフ管理パネル）
+## StaffGrantPanel（スタッフ管理パネル） { #grant-panel }
 
 メニューのスタッフ管理タブの中身です。付与・剥奪の対象一覧は自動で作られるため、Inspector で調整する項目はありません（行の枠数はメニュー生成時に決まります）。
 
@@ -302,7 +302,7 @@ GameObject の出し入れなら、同梱の [StaffObjectToggle](#object-toggle)
 
 ---
 
-## StaffTeleportMenu（テレポート）
+## StaffTeleportMenu（テレポート） { #teleport }
 
 登録地点への移動と、在室スタッフの元への移動を担当します。移動はローカルのみのため同期は不要です。
 
