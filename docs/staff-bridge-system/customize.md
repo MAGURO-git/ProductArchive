@@ -18,13 +18,14 @@
 
 | テーマ | 配色 | 特徴 |
 |---|---|---|
-| コントロールルーム（既定） | <span class="sw"><i style="background:#0D1119"></i><i style="background:#161D2B"></i><i style="background:#222C3F"></i><i style="background:#3D8BFF"></i><i style="background:#EFF3FA"></i></span> | 紺 × 青。癖がなく馴染みやすい |
-| バックステージ | <span class="sw"><i style="background:#131211"></i><i style="background:#1E1C19"></i><i style="background:#262421"></i><i style="background:#FFC933"></i><i style="background:#F7F5F0"></i></span> | 炭黒 × イエロー。視認性が最も高い |
-| トワイライト | <span class="sw"><i style="background:#181729"></i><i style="background:#232138"></i><i style="background:#302D4B"></i><i style="background:#A99BE8"></i><i style="background:#F2F0FA"></i></span> | 藍紫。当たりがやわらかい |
-| ランタン | <span class="sw"><i style="background:#1C1613"></i><i style="background:#281F1A"></i><i style="background:#362A22"></i><i style="background:#F0913D"></i><i style="background:#F7F0E8"></i></span> | 提灯・焚き火のような暖色 |
-| オーシャン | <span class="sw"><i style="background:#101820"></i><i style="background:#182430"></i><i style="background:#24333F"></i><i style="background:#3EC6DE"></i><i style="background:#EDF4F8"></i></span> | 深青 × シアン。水中のような涼しい印象 |
-| いちごショコラ | <span class="sw"><i style="background:#241318"></i><i style="background:#311C24"></i><i style="background:#402731"></i><i style="background:#F291B4"></i><i style="background:#FAF2F0"></i></span> | ショコラ × いちごのかわいい系 |
-| グラファイト | <span class="sw"><i style="background:#141518"></i><i style="background:#1F2126"></i><i style="background:#2A2D33"></i><i style="background:#E8EAEE"></i><i style="background:#EDEFF2"></i></span> | 黒 × 白のミニマル。無彩色 |
+| コントロールルーム（既定） | <span class="sw"><i style="background:#0D1119"></i><i style="background:#161D2B"></i><i style="background:#222C3F"></i><i style="background:#0062F5"></i><i style="background:#EFF3FA"></i></span> | 紺×青の落ち着いた定番 |
+| バックステージ（炭黒×イエロー） | <span class="sw"><i style="background:#131211"></i><i style="background:#1E1C19"></i><i style="background:#262421"></i><i style="background:#FFC933"></i><i style="background:#F7F5F0"></i></span> | 工具・安全ベストのような現場感 |
+| トワイライト（藍紫） | <span class="sw"><i style="background:#181729"></i><i style="background:#232138"></i><i style="background:#302D4B"></i><i style="background:#A99BE8"></i><i style="background:#F2F0FA"></i></span> | 夜空のような藍紫 |
+| ランタン（暖色） | <span class="sw"><i style="background:#1C1613"></i><i style="background:#281F1A"></i><i style="background:#362A22"></i><i style="background:#F0913D"></i><i style="background:#F7F0E8"></i></span> | 提灯・焚き火のような暖かい暗色 |
+| オーシャン（深青×シアン） | <span class="sw"><i style="background:#101820"></i><i style="background:#182430"></i><i style="background:#24333F"></i><i style="background:#3EC6DE"></i><i style="background:#EDF4F8"></i></span> | 水中のような涼しい深青 |
+| いちごショコラ（暗色） | <span class="sw"><i style="background:#241318"></i><i style="background:#311C24"></i><i style="background:#402731"></i><i style="background:#F291B4"></i><i style="background:#FAF2F0"></i></span> | ショコラ×いちごの暗いかわいい系 |
+| グラファイト（無彩色） | <span class="sw"><i style="background:#141518"></i><i style="background:#1F2126"></i><i style="background:#2A2D33"></i><i style="background:#E8EAEE"></i><i style="background:#EDEFF2"></i></span> | 黒×白のミニマル |
+| カラーユニバーサル | <span class="sw"><i style="background:#12151A"></i><i style="background:#1B2028"></i><i style="background:#2A3038"></i><i style="background:#E9EDF2"></i><i style="background:#EDF1F6"></i></span> | 発話=青・OFF=橙 |
 
 </div>
 
@@ -34,23 +35,9 @@
 
 | テーマ | 配色 | 特徴 |
 |---|---|---|
-| ギャラリー | <span class="sw"><i style="background:#ECE9E2"></i><i style="background:#F7F5F0"></i><i style="background:#DDD7CA"></i><i style="background:#2D5C8F"></i><i style="background:#26292E"></i></span> | 紙白 × 深藍。美術館のキャプション風 |
-| ストロベリークリーム | <span class="sw"><i style="background:#F6EDE6"></i><i style="background:#FBF6F1"></i><i style="background:#EBDBD2"></i><i style="background:#D96A93"></i><i style="background:#3A2E2C"></i></span> | 生クリーム × いちご |
-| スノー | <span class="sw"><i style="background:#F2F3F5"></i><i style="background:#FAFBFC"></i><i style="background:#E0E3E7"></i><i style="background:#3A3F46"></i><i style="background:#23262B"></i></span> | 白 × 炭のミニマル。無彩色 |
+| ストロベリークリーム（明色） | <span class="sw"><i style="background:#F6EDE6"></i><i style="background:#FBF6F1"></i><i style="background:#EBDBD2"></i><i style="background:#D96A93"></i><i style="background:#3A2E2C"></i></span> | 生クリーム×いちごの明るいかわいい系 |
 
 </div>
-
-### 色覚配慮
-
-<div class="theme-table" markdown>
-
-| テーマ | 配色 | 特徴 |
-|---|---|---|
-| カラーユニバーサル | <span class="sw"><i style="background:#12151A"></i><i style="background:#1B2028"></i><i style="background:#2A3038"></i><i style="background:#E9EDF2"></i><i style="background:#EDF1F6"></i></span> | 発話＝青・OFF＝橙。誰が使うか分からない常設ワールド向け |
-
-</div>
-
-他のテーマは発話＝緑・OFF＝赤ですが、この2色は最も多い赤緑型では見分けにくいため、このテーマだけ意味色を青×橙へ置き換えています。選択中の表示も、色相ではなく明るさで分かるように無彩色にしてあります。
 
 ## 配色を自分で決める（カスタム）
 
