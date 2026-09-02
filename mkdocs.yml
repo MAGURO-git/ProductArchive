@@ -111,6 +111,7 @@ nav:
       - 運用ガイド: staff-bridge-system/operation.md
       - トラブルシューティング: staff-bridge-system/troubleshoot.md
       - よくある質問: staff-bridge-system/faq.md
+      - 自作ギミックとつなぐ: staff-bridge-system/for-developers.md
       - 更新履歴: staff-bridge-system/changelog.md
   # マニュアル未整備の製品は、更新履歴だけ先に置いてある。
   - 更新履歴:

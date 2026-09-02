@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 530" width="1000" height="530" style="background:#020617" role="img">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6ea8ff"/>
+    </marker>
+    <marker id="ah-dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: system-ui, "Segoe UI", "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", sans-serif; fill: #e2e8f0; }
+    .head { font-size: 15px; font-weight: 600; text-anchor: middle; }
+    .sub { font-size: 11px; fill: #94a3b8; text-anchor: middle; }
+    .step { font-size: 13px; text-anchor: middle; }
+    .lbl { font-size: 14px; font-weight: 600; fill: #9ec5ff; text-anchor: middle; }
+    .note { font-size: 12px; fill: #94a3b8; text-anchor: middle; }
+    .zone { font-size: 13px; font-weight: 600; fill: #cbd5e1; }
+    .box { fill: #0f172a; stroke: #475569; }
+    .life { stroke: #334155; stroke-dasharray: 4 4; }
+  </style>
+
+  <!-- 縦のライフライン -->
+  <line class="life" x1="170" y1="68" x2="170" y2="500"/>
+  <line class="life" x1="520" y1="68" x2="520" y2="500"/>
+  <line class="life" x1="760" y1="68" x2="760" y2="500"/>
+  <line class="life" x1="920" y1="68" x2="920" y2="500"/>
+
+  <!-- 列ヘッダー -->
+  <rect class="box" x="70" y="18" width="200" height="50" rx="8"/>
+  <text class="head" x="170" y="40">押した人のクライアント</text>
+  <text class="sub" x="170" y="58">スタッフだけが押せる</text>
+
+  <rect class="box" x="440" y="18" width="160" height="50" rx="8"/>
+  <text class="head" x="520" y="48">VRChatサーバー</text>
+
+  <rect class="box" x="690" y="18" width="140" height="50" rx="8"/>
+  <text class="head" x="760" y="48">他の全員</text>
+
+  <rect class="box" x="845" y="18" width="150" height="50" rx="8"/>
+  <text class="head" x="920" y="40">あとから入る人</text>
+  <text class="sub" x="920" y="58">回線落ちの入り直しも同じ</text>
+
+  <!-- ① ローカル -->
+  <text class="zone" x="60" y="100">① ローカル（通信なし）</text>
+  <rect x="60" y="110" width="220" height="130" rx="8" fill="none" stroke="#475569" stroke-dasharray="6 4"/>
+  <rect class="box" x="80" y="124" width="180" height="36" rx="6"/>
+  <text class="step" x="170" y="147">スイッチを押す</text>
+  <line x1="170" y1="160" x2="170" y2="176" stroke="#64748b" marker-end="url(#ah-dim)"/>
+  <rect class="box" x="80" y="180" width="180" height="46" rx="6"/>
+  <text class="step" x="170" y="199">SendCustomEvent 1回</text>
+  <text class="step" x="170" y="217" fill="#94a3b8">受け手ギミックが反映</text>
+
+  <!-- ② 同期を書く -->
+  <line x1="170" y1="290" x2="512" y2="290" stroke="#6ea8ff" stroke-width="2" marker-end="url(#ah)"/>
+  <text class="lbl" x="345" y="278">② Owner として同期変数を書く（1回）</text>
+  <text class="note" x="345" y="310">押した記録の同期もここで1回</text>
+
+  <!-- ③ 配布 -->
+  <line x1="520" y1="360" x2="752" y2="360" stroke="#6ea8ff" stroke-width="2" marker-end="url(#ah)"/>
+  <text class="lbl" x="636" y="348">③ 現在値を配布</text>
+  <text class="note" x="636" y="380">各自の受け手が反映</text>
+
+  <!-- ④ レイトジョイナー -->
+  <line x1="520" y1="460" x2="912" y2="460" stroke="#6ea8ff" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+  <text class="lbl" x="716" y="448">④ 入室すると現在値が届く</text>
+</svg>
