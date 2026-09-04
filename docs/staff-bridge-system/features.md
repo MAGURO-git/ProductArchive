@@ -16,7 +16,7 @@
 | 一斉メッセージ | 全スタッフ、宛先グループ、選んだスタッフへ定型文を送る。グループと個人はまとめて選べ、複数に当てはまる人にも1通だけ届く | [使い方](usage.md#broadcast) / [設定](reference.md#broadcast) |
 | タイマー | 全員に見える共有タイマーと、自分だけのタイマー・ストップウォッチ | [使い方](usage.md#timer) / [設定](reference.md#timer) |
 | 入退室ログ | 誰がいつ入って出たかの記録 | [使い方](usage.md#timer) / [設定](reference.md#join-log) |
-| ノート | 進行台本の閲覧と、自分だけの走り書きメモ。台本とメモを視界の右下に出しておける | [使い方](usage.md#note) / [設定](reference.md#cue) |
+| ノート | 全員に見える共有メモと、自分だけの走り書きメモ。進行台本やチェックリストの掲示に使う。どちらも視界の右下に出しておける | [使い方](usage.md#note) / [設定](reference.md#cue) |
 | スイッチ | 手元からワールド内のギミックへイベントを送る。誰がいつ押したかの履歴が残る | [使い方](usage.md#switch) / [設定](reference.md#trigger) |
 | 通知ログ | 受信・タイマーの時間切れ・人の出入りを、視界の隅の1本のログにまとめて流す | [使い方](usage.md#notice-log) / [設定](reference.md#notice-log) |
 | スタッフ管理 | 在室者を当日スタッフにする／当日スタッフを外す。常設スタッフだけに出るタブ | [使い方](usage.md#staff-manage) / [設定](reference.md#grant-panel) |
