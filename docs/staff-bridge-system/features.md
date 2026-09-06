@@ -20,7 +20,7 @@
 | スイッチ | 手元からワールド内のギミックへイベントを送る。誰がいつ押したかの履歴が残る | [使い方](usage.md#switch) / [設定](reference.md#trigger) |
 | 通知ログ | 受信・タイマーの時間切れ・人の出入りを、視界の隅の1本のログにまとめて流す。左下／左上／非表示を選択可能 | [使い方](usage.md#notice-log) / [設定](reference.md#notice-log) |
 | スタッフ管理 | 在室者を当日スタッフにする／当日スタッフを外す。常設スタッフで現在スタッフONの人だけが開けるタブ | [使い方](usage.md#staff-manage) / [設定](reference.md#grant-panel) |
-| 設定 | 音量・UI サイズ・発話方式・通知ログの位置を各自で調整する。再入場しても残る | [使い方](usage.md#settings) / [既定値](reference.md#settings-defaults) |
+| 設定 | 音量・UI サイズ・発話方式・通知ログと視界ノートの位置を各自で調整する。再入場しても残る | [使い方](usage.md#settings) / [既定値](reference.md#settings-defaults) |
 
 ## シーンに置くもの
 
