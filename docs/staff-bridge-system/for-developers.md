@@ -21,7 +21,12 @@ UdonSharp や Udon Graph で自作ギミックを書く方向けのページで�
 - 全員のクライアントで実行する発火はありません。同期する受け側と組み合わさると、全員が Owner を取り合って人数ぶんの同期が走るためです
 - ネットワークに乗るのは「押した記録」と「受け手の同期変数」の2つだけ。人数が増えても送信コストは変わりません
 
-[![スイッチの発火と同期の経路。押した人のクライアントで受け手ギミックへ SendCustomEvent が1回だけ走り、SBS はそれとは別に表示用の記録をグローバル同期する。ギミックの状態を全員へ揃えることとレイトジョイナーへの反映は受け手側の責務](images/dev-switch-path.svg)](images/dev-switch-path.svg){ target=_blank title="クリックで拡大" }
+<div class="zoom-figure" markdown="1" style="--zoom-figure-width: 1320px">
+<input type="checkbox" id="zoom-switch-path">
+<label for="zoom-switch-path">![スイッチの発火と同期の経路。押した人のクライアントで受け手ギミックへ SendCustomEvent が1回だけ走り、SBS はそれとは別に表示用の記録をグローバル同期する。ギミックの状態を全員へ揃えることとレイトジョイナーへの反映は受け手側の責務](images/dev-switch-path.svg)</label>
+
+<p class="zoom-hint">図をクリックすると原寸になります（もう一度で戻ります）。</p>
+</div>
 
 ## グローバルにするなら、イベントを配らず状態を書く { #make-it-global }
 
