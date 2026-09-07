@@ -1,66 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 530" width="1000" height="530" style="background:#020617" role="img">
-  <defs>
-    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#6ea8ff"/>
-    </marker>
-    <marker id="ah-dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
-    </marker>
-  </defs>
-  <style>
-    text { font-family: system-ui, "Segoe UI", "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", sans-serif; fill: #e2e8f0; }
-    .head { font-size: 15px; font-weight: 600; text-anchor: middle; }
-    .sub { font-size: 11px; fill: #94a3b8; text-anchor: middle; }
-    .step { font-size: 13px; text-anchor: middle; }
-    .lbl { font-size: 14px; font-weight: 600; fill: #9ec5ff; text-anchor: middle; }
-    .note { font-size: 12px; fill: #94a3b8; text-anchor: middle; }
-    .zone { font-size: 13px; font-weight: 600; fill: #cbd5e1; }
-    .box { fill: #0f172a; stroke: #475569; }
-    .life { stroke: #334155; stroke-dasharray: 4 4; }
-  </style>
+<svg width="1320" height="720" viewBox="0 0 1320 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="switch-path-title switch-path-desc">
+      <title id="switch-path-title">スイッチの発火と同期の経路</title>
+      <desc id="switch-path-desc">スタッフがメニューのスイッチを押すと、StaffTrigger はスタッフ再判定とクールダウンを通したうえで、押した本人のクライアントでだけ受け手ギミックへ SendCustomEvent を1回送る。それとは別に Owner を取って表示用の記録（_seq と実行履歴）を同期し、他の全員とあとから入る人のメニュー表示だけが OnDeserialization で更新される。ギミックの状態を全員へ揃えることとレイトジョイナーへの反映は受け手側の責務で、SBS は関与しない。青い線だけがネットワークに乗る。</desc>
 
-  <!-- 縦のライフライン -->
-  <line class="life" x1="170" y1="68" x2="170" y2="500"/>
-  <line class="life" x1="520" y1="68" x2="520" y2="500"/>
-  <line class="life" x1="760" y1="68" x2="760" y2="500"/>
-  <line class="life" x1="920" y1="68" x2="920" y2="500"/>
+      <defs>
+        <marker id="sp-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+        </marker>
+        <marker id="sp-arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#6ea8ff"/>
+        </marker>
+      </defs>
 
-  <!-- 列ヘッダー -->
-  <rect class="box" x="70" y="18" width="200" height="50" rx="8"/>
-  <text class="head" x="170" y="40">押した人のクライアント</text>
-  <text class="sub" x="170" y="58">スタッフだけが押せる</text>
+      <rect width="100%" height="100%" fill="#0f172a"/>
 
-  <rect class="box" x="440" y="18" width="160" height="50" rx="8"/>
-  <text class="head" x="520" y="48">VRChatサーバー</text>
+      <!-- ライフライン -->
+      <line x1="140"  y1="88" x2="140"  y2="700" stroke="rgba(226,232,240,0.14)" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="420"  y1="88" x2="420"  y2="700" stroke="rgba(226,232,240,0.14)" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="700"  y1="88" x2="700"  y2="700" stroke="rgba(226,232,240,0.14)" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="960"  y1="88" x2="960"  y2="700" stroke="rgba(226,232,240,0.14)" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="1176" y1="88" x2="1176" y2="700" stroke="rgba(226,232,240,0.14)" stroke-width="1" stroke-dasharray="3,3"/>
 
-  <rect class="box" x="690" y="18" width="140" height="50" rx="8"/>
-  <text class="head" x="760" y="48">他の全員</text>
+      <!-- 受け手側の責務フレーム -->
+      <rect x="676" y="528" width="308" height="124" rx="4" fill="rgba(226,232,240,0.04)" stroke="rgba(226,232,240,0.22)" stroke-width="1"/>
+      <rect x="676" y="528" width="88" height="16" rx="2" fill="#0f172a" stroke="rgba(226,232,240,0.22)" stroke-width="1"/>
+      <text x="720" y="540" fill="#94a3b8" font-size="12" font-weight="500" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">受け手の実装</text>
+      <text x="688" y="560" fill="#94a3b8" font-size="12" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">［全員に効かせたい場合］</text>
 
-  <rect class="box" x="845" y="18" width="150" height="50" rx="8"/>
-  <text class="head" x="920" y="40">あとから入る人</text>
-  <text class="sub" x="920" y="58">回線落ちの入り直しも同じ</text>
+      <!-- 矢印（ボックスより先に描く） -->
+      <line x1="140" y1="152" x2="416"  y2="152" stroke="#94a3b8" stroke-width="1" marker-end="url(#sp-arrow)"/>
+      <line x1="420" y1="248" x2="696"  y2="248" stroke="#94a3b8" stroke-width="1" marker-end="url(#sp-arrow)"/>
+      <line x1="420" y1="344" x2="956"  y2="344" stroke="#6ea8ff" stroke-width="1.2" marker-end="url(#sp-arrow-link)"/>
+      <line x1="960" y1="456" x2="1172" y2="456" stroke="#6ea8ff" stroke-width="1.2" marker-end="url(#sp-arrow-link)"/>
+      <line x1="700" y1="596" x2="956"  y2="596" stroke="#6ea8ff" stroke-width="1.2" stroke-dasharray="6,5" marker-end="url(#sp-arrow-link)"/>
 
-  <!-- ① ローカル -->
-  <text class="zone" x="60" y="100">① ローカル（通信なし）</text>
-  <rect x="60" y="110" width="220" height="130" rx="8" fill="none" stroke="#475569" stroke-dasharray="6 4"/>
-  <rect class="box" x="80" y="124" width="180" height="36" rx="6"/>
-  <text class="step" x="170" y="147">スイッチを押す</text>
-  <line x1="170" y1="160" x2="170" y2="176" stroke="#64748b" marker-end="url(#ah-dim)"/>
-  <rect class="box" x="80" y="180" width="180" height="46" rx="6"/>
-  <text class="step" x="170" y="199">SendCustomEvent 1回</text>
-  <text class="step" x="170" y="217" fill="#94a3b8">受け手ギミックが反映</text>
+      <!-- ① スタッフの押下 -->
+      <rect x="196" y="128" width="168" height="16" rx="2" fill="#0f172a"/>
+      <text x="280" y="144" fill="#e2e8f0" font-size="12" font-weight="600" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">① スタッフがスイッチを押す</text>
+      <text x="280" y="172" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">再判定とクールダウンを通過</text>
+      <text x="280" y="192" fill="#64748b" font-size="12" text-anchor="middle" font-family="'Geist Mono', ui-monospace, 'Consolas', monospace">StaffTrigger.Fire(index)</text>
 
-  <!-- ② 同期を書く -->
-  <line x1="170" y1="290" x2="512" y2="290" stroke="#6ea8ff" stroke-width="2" marker-end="url(#ah)"/>
-  <text class="lbl" x="345" y="278">② Owner として同期変数を書く（1回）</text>
-  <text class="note" x="345" y="310">押した記録の同期もここで1回</text>
+      <!-- ② ローカル発火 -->
+      <rect x="444" y="224" width="232" height="16" rx="2" fill="#0f172a"/>
+      <text x="560" y="240" fill="#e2e8f0" font-size="12" font-weight="600" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">② 押した人の端末だけでイベントを1回</text>
+      <text x="560" y="268" fill="#64748b" font-size="12" text-anchor="middle" font-family="'Geist Mono', ui-monospace, 'Consolas', monospace">target.SendCustomEvent(ev)</text>
+      <text x="560" y="288" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">ネットワークには乗らない</text>
 
-  <!-- ③ 配布 -->
-  <line x1="520" y1="360" x2="752" y2="360" stroke="#6ea8ff" stroke-width="2" marker-end="url(#ah)"/>
-  <text class="lbl" x="636" y="348">③ 現在値を配布</text>
-  <text class="note" x="636" y="380">各自の受け手が反映</text>
+      <!-- ③ 表示用の記録を同期 -->
+      <rect x="724" y="320" width="168" height="16" rx="2" fill="#0f172a"/>
+      <text x="808" y="336" fill="#6ea8ff" font-size="12" font-weight="600" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">③ 表示用の記録を同期（1回）</text>
+      <text x="808" y="364" fill="#64748b" font-size="12" text-anchor="middle" font-family="'Geist Mono', ui-monospace, 'Consolas', monospace">RequestSerialization()</text>
+      <text x="808" y="384" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">送るのは _seq と実行履歴</text>
+      <text x="808" y="404" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">ギミックの状態は運ばない</text>
 
-  <!-- ④ レイトジョイナー -->
-  <line x1="520" y1="460" x2="912" y2="460" stroke="#6ea8ff" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ah)"/>
-  <text class="lbl" x="716" y="448">④ 入室すると現在値が届く</text>
-</svg>
+      <!-- ④ 現在値を配布 -->
+      <rect x="984" y="432" width="168" height="16" rx="2" fill="#0f172a"/>
+      <text x="1068" y="448" fill="#6ea8ff" font-size="12" font-weight="600" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">④ 現在値を配布 → 表示を更新</text>
+      <text x="1068" y="476" fill="#64748b" font-size="12" text-anchor="middle" font-family="'Geist Mono', ui-monospace, 'Consolas', monospace">OnDeserialization</text>
+      <text x="1068" y="496" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">過去の発火は流れ直さない</text>
+
+      <!-- ⑤ 受け手が自分で同期する（フレームの中・地色に合わせたマスク） -->
+      <rect x="756" y="572" width="152" height="16" rx="2" fill="#171f32"/>
+      <text x="832" y="588" fill="#6ea8ff" font-size="12" font-weight="600" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">⑤ 受け手が自分で同期する</text>
+      <text x="832" y="616" fill="#64748b" font-size="12" text-anchor="middle" font-family="'Geist Mono', ui-monospace, 'Consolas', monospace">SendCustomNetworkEvent(All, …)</text>
+      <text x="832" y="636" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">または自前の [UdonSynced]</text>
+
+      <!-- 責務の境界 -->
+      <rect x="672" y="664" width="304" height="16" rx="2" fill="#0f172a"/>
+      <text x="676" y="676" fill="#94a3b8" font-size="12" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">⑤とレイトジョイナー反映は受け手の責務。SBS は①〜④まで</text>
+
+      <!-- アクター -->
+      <rect x="44" y="32" width="192" height="56" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+      <text x="140" y="56" fill="#e2e8f0" font-size="16" font-weight="600" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">スタッフ</text>
+      <text x="140" y="76" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">押した本人</text>
+
+      <rect x="284" y="32" width="272" height="56" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+      <text x="420" y="56" fill="#e2e8f0" font-size="16" font-weight="600" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">StaffTrigger</text>
+      <text x="420" y="76" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">押した人の端末・SBS</text>
+
+      <rect x="596" y="32" width="208" height="56" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+      <text x="700" y="56" fill="#e2e8f0" font-size="16" font-weight="600" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">受け手ギミック</text>
+      <text x="700" y="76" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">押した人の端末</text>
+
+      <rect x="872" y="32" width="176" height="56" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+      <text x="960" y="56" fill="#e2e8f0" font-size="16" font-weight="600" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">VRChatサーバー</text>
+      <text x="960" y="76" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">同期の配布元</text>
+
+      <rect x="1084" y="32" width="184" height="56" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+      <text x="1176" y="56" fill="#e2e8f0" font-size="16" font-weight="600" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">他の全員</text>
+      <text x="1176" y="76" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="'Geist', system-ui, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif">あとから入る人も含む</text>
+    </svg>

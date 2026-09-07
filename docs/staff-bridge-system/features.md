@@ -13,14 +13,14 @@
 | テレポート | 登録した地点と、在室スタッフのところへ移動する。相手の背後に着地する。★でお気に入りに入れると一覧の上に並ぶ | [使い方](usage.md#teleport) / [設定](reference.md#teleport) |
 | インカム | 同じチャンネルに参加している人だけに聞こえる通話。参加中のメンバーと、いま話している人が一覧に出る | [使い方](usage.md#incom) / [設定](reference.md#incom) |
 | メガホン | 距離に関係なく、スタッフ以外を含む全員へ声を届ける。ボタン長押し／Desktopキー／VRジェスチャー（左手）の3通りで始められる。VRは長押し／トグル／OFFを選択可能 | [使い方](usage.md#megaphone) / [設定](reference.md#megaphone) |
-| 一斉メッセージ | 全スタッフ、宛先グループ、選んだスタッフへ定型文を送る。グループと個人はまとめて選べ、複数に当てはまる人にも1通だけ届く | [使い方](usage.md#broadcast) / [設定](reference.md#broadcast) |
+| 一斉メッセージ | 全スタッフ、宛先グループ、選んだスタッフへ定型文を送る。グループは複数選べ、個人ともまとめられる。複数に当てはまる人にも1通だけ届く | [使い方](usage.md#broadcast) / [設定](reference.md#broadcast) |
 | タイマー | スタッフ全員に見える共有タイマーと、自分だけのタイマー・ストップウォッチ。時間になると短い通知音が鳴る | [使い方](usage.md#timer) / [設定](reference.md#timer) |
 | 入退室ログ | 誰がいつ入室・退室したかの記録 | [使い方](usage.md#timer) / [設定](reference.md#join-log) |
 | ノート | 全員に見える共有メモと、自分だけの走り書きメモ。進行台本やチェックリストの掲示に使う。どちらも視界の右下に出しておける | [使い方](usage.md#note) / [設定](reference.md#cue) |
 | スイッチ | 手元からワールド内のギミックへイベントを送る。誰がいつ押したかの履歴が残る | [使い方](usage.md#switch) / [設定](reference.md#trigger) |
 | 通知ログ | 受信・タイマーの時間切れ・人の出入りを、視界の隅の1本のログにまとめて流す。左下／左上／非表示を選択可能 | [使い方](usage.md#notice-log) / [設定](reference.md#notice-log) |
 | スタッフ管理 | 在室者を当日スタッフにする／当日スタッフを外す。常設スタッフで現在スタッフONの人だけが開けるタブ | [使い方](usage.md#staff-manage) / [設定](reference.md#grant-panel) |
-| 設定 | 音量・UI サイズ・発話方式・通知ログと視界ノートの位置を各自で調整する。再入場しても残る | [使い方](usage.md#settings) / [既定値](reference.md#settings-defaults) |
+| 設定 | 音量・UI サイズ・発話方式・通知ログとノートの位置を各自で調整する。再入場しても残る | [使い方](usage.md#settings) / [既定値](reference.md#settings-defaults) |
 
 ## シーンに置くもの
 
