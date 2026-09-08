@@ -38,7 +38,7 @@
 
 ## Unity 側の編集ツール
 
-主な設定は、**Tools ＞ MGR ＞ Staff Bridge System ＞ セットアップ** から編集できます。
+主な設定は、**Tools > MGR > Staff Bridge System > セットアップ** から編集できます。
 
 | ページ | できること | 詳しくは |
 |---|---|---|

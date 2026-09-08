@@ -6,11 +6,11 @@
 
 VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`com.mimylab.fukuroudon`）を追加してください。**インカムを使わない場合も必要です。** 日本語表示用のフォントは依存パッケージとして一緒に入ります。
 
-動作確認済みは **3.19.5** です。導入後はバージョンを固定し、更新時は診断と実機確認を行ってください。
+動作確認済みは 3.19.5 です。導入後はバージョンを固定し、更新時は診断と実機確認を行ってください。
 
 ### TMP Essentials をインポートする { #tmp-essentials }
 
-`Assets/TextMesh Pro/` が無い場合は、**Window ＞ TextMeshPro ＞ Import TMP Essential Resources** を実行してください。すでに導入済みなら不要です。
+`Assets/TextMesh Pro/` が無い場合は、**Window > TextMeshPro > Import TMP Essential Resources** を実行してください。すでに導入済みなら不要です。
 
 日本語が表示されない場合は、前提パッケージとTMP Essentialsの両方を確認してください（[文字が表示されない場合](troubleshoot.md)）。
 
@@ -29,7 +29,7 @@ VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`co
 
 ## 3. セットアップウィンドウを開く
 
-**Tools ＞ MGR ＞ Staff Bridge System ＞ セットアップ** を開きます。先頭に前提パッケージの不足が表示された場合は、「導入ページを開く」から追加してください。
+**Tools > MGR > Staff Bridge System > セットアップ** を開きます。先頭に前提パッケージの不足が表示された場合は、「導入ページを開く」から追加してください。
 
 ![セットアップページ](images/setup-tab.png)
 
@@ -37,7 +37,7 @@ VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`co
 
 ### ボタンの上の入力
 
-必要に応じて入力し、**「セットアップする」**を押してください。空欄・既定値のままでも実行できます。
+必要に応じて入力し、「セットアップする」を押してください。空欄・既定値のままでも実行できます。
 
 | 項目 | 入力・動作 |
 |---|---|
@@ -51,13 +51,13 @@ VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`co
 
 ### SBSメニューのタブを決める { #menu-config }
 
-使わないタブの非表示や並べ替えは、**カスタマイズ ＞ メニュー構成**から行います。手順は[メニュー構成の変更](howto.md#menu-config)を参照してください。
+使わないタブの非表示や並べ替えは、**カスタマイズ > メニュー構成**から行います。手順は[メニュー構成の変更](howto.md#menu-config)を参照してください。
 
 ## 5. 動作を確認してアップロードする
 
 1. 「診断・修復」で指摘を確認・修復します。
 2. UnityのPlayモードで、名簿への登録または切替スイッチで自分をスタッフにしてメニューの開閉と操作を確認します（[操作ガイド](usage.md)）。
-3. StaffRegistryの**「ログ出力する」をOFF**にしてアップロードします。ONのままだとスタッフの表示名がConsoleに出続け、アップロード時に警告が出ます。
+3. StaffRegistryの「ログ出力する」をOFFにしてアップロードします。ONのままだとスタッフの表示名がConsoleに出続け、アップロード時に警告が出ます。
 4. アップロード先で、通話や同期を含めた[本番前の確認](operation.md#pre-event-check)を行います。
 
 ## 既存のワールドへの後付け
@@ -78,7 +78,7 @@ VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`co
 
 ## 既存オブジェクトをスタッフ限定にする { #staff-only-existing }
 
-ヒエラルキーでオブジェクトを選択し、右クリック ＞ **GameObject ＞ MGR ＞ Staff Bridge System** から選びます。
+Hierarchyでオブジェクトを選択し、右クリック > **GameObject > MGR > Staff Bridge System** から選びます。
 
 | メニュー | 動作 |
 |---|---|
@@ -87,7 +87,7 @@ VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`co
 | スタッフだけ押せるボタンにする | 既存のインタラクトをスタッフ限定にする |
 | スタッフだけ通れる壁（ゲート）にする | スタッフ以外だけを通さない壁にする |
 
-同じ項目は **Tools ＞ MGR ＞ Staff Bridge System ＞ 選択オブジェクトに追加** からも実行できます。
+同じ項目は **Tools > MGR > Staff Bridge System > 選択オブジェクトに追加** からも実行できます。
 
 「スタッフだけ見えるようにする」は対象自身の Renderer / Collider / Canvas を切り替えるため、音や配下ギミックの動作は止まりません。音ごと完全に消したい場合は `StaffOnlyVisible`（一括マネージャ）を手動で配置してください。詳しい違いは [設定リファレンス](reference.md#staff-only-objects) を参照してください。
 
