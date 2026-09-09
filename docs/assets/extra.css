@@ -254,3 +254,43 @@
 .md-typeset .product-card .badge {
   margin-top: 0.25em;
 }
+
+/* 図をクリックで画面いっぱいに出す。本文の幅では図の中の識別子が読めないため。
+   チェックボックスとCSSだけで作り、プラグインもJavaScriptも足していない。
+   overlay 全体が label なので、どこを押しても閉じる。 */
+.md-typeset .zoom-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.md-typeset .zoom-open {
+  display: block;
+  cursor: zoom-in;
+}
+
+.md-typeset .zoom-toggle:focus-visible + .zoom-open img {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 3px;
+}
+
+.md-typeset .zoom-toggle:checked + .zoom-open {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmin;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.88);
+  cursor: zoom-out;
+}
+
+.md-typeset .zoom-toggle:checked + .zoom-open img {
+  max-width: 96vw;
+  max-height: 96vh;
+  width: auto;
+  height: auto;
+}

@@ -33,6 +33,7 @@
 | スタッフ限定オブジェクト | スタッフだけに見せる／スタッフには隠す／スタッフだけ押せるようにする | [使い方](usage.md#staff-only) / [設定](reference.md#staff-only-objects) |
 | 在室スタッフ一覧ボード | いま入室しているスタッフ名を掲示する | [導入](install.md#single-prefab) |
 | 共有タイマーボード | 共有タイマーの残り時間を壁などに掲示する | [設定](reference.md#timer-board) |
+| ログボード | スイッチ・メッセージ・タイマー・スタッフ・入退室を時刻順に流す。種別で絞り込める | [設定](reference.md#log-board) |
 | 頭上マーカー | スタッフの頭上に目印を出す | [導入](install.md#single-prefab) |
 
 既存のオブジェクトは、置き直さずに右クリックからスタッフ限定へ変えられます（[導入](install.md#staff-only-existing)）。
