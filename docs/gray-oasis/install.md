@@ -21,7 +21,7 @@ VRChat ワールド用の新規プロジェクトを作成します（Unity 2022
     `GRAY_OASIS_builtinLightmapper.unitypackage` をインポートしてください。ビルトインライトマッパーでベイクしたシーンが入っています。
 
 !!! warning "Bakery と VRC Light Volumes の組み合わせ"
-    2025年5月23日時点で、VRC Light Volumes に対応している Bakery は [Git から取得する最新バージョン](https://geom.io/bakery/wiki/index.php?title=Github_access) のみです。
+    VRC Light Volumes に対応する Bakery のバージョンについては、Bakery 公式ドキュメントの最新情報をご確認ください。
 
 ## 3. GRAY OASIS をインポートする
 
@@ -37,7 +37,7 @@ VRChat ワールド用の新規プロジェクトを作成します（Unity 2022
 ![シーンの場所](images/scene-location.png)
 
 !!! note "ライトマップの参照が外れている場合"
-    再度ライトマップのベイクを行ってください。
+    ライトマップの再ベイクを行ってください。
 
 ## 5. Bakery の設定
 

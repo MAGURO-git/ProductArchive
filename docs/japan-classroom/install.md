@@ -5,7 +5,7 @@
 BOOTH は1ファイル 1GB が上限のため、3つに分割しています。
 
 1. `JapanClassroom.part1.zip` を解凍する
-2. 出てきた `JapanClassroom.part1.exe` を `part2.rar` / `part3.rar` と同じ階層に置いて実行する
+2. 出てきた分割自己解凍ファイル「`JapanClassroom.part1.exe`」を、`part2.rar` / `part3.rar` と同じフォルダに置いた状態で実行し、結合・解凍します
 3. 作成された `JapanClassroom.unitypackage` を使う
 
 一部のテクスチャは外部クラウドストレージに置いています。同梱の `テクスチャのダウンロードリンク.txt` からアクセスしてください。

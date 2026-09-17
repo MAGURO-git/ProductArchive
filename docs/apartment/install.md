@@ -3,7 +3,7 @@
 !!! warning "この手順は SDK3 対応時点（2022年9月）のものです"
     当時のバージョンを前提に、unitypackage を手動で順に入れる形になっています。現在の VRChat SDK や VCC / ALCOM を使った導入とは手順が異なります。現行環境での動作確認は行っていません。
 
-    現行のバージョンで導入した場合、ギミックが動作しないなどの差異が出ることがあります。その場合の設定のやり直しや差し替えは、購入者さまご自身での対応をお願いします。
+    現行環境（VCC / Unity 2022等）で導入された場合、パッケージ構成の違いによりギミックが正常に動作しない場合があります。必要に応じてコンポーネントの再設定や最新アセットへの差し替えをご検討ください。
 
 導入手順の動画を公開しています。画面の流れはこちらが分かりやすいです。
 
@@ -21,7 +21,7 @@
 
 | 順 | アセット | 入手先 |
 |---|---|---|
-| 1 | VRCSDK3-WORLD-2022.08.29.20.48_Public | <https://vrchat.com/home/download> |
+| 1 | VRCSDK3-WORLD（当時のスタンドアロン版） | ※現在はVCCからの導入が標準です |
 | 2 | UdonSharp v0.20.3 | [vrchat-community/UdonSharp](https://github.com/vrchat-community/UdonSharp/releases) |
 | 3 | UdonToolkit | [orels1/UdonToolkit](https://github.com/orels1/UdonToolkit/releases) |
 | 4 | 【VRC向け】iwaSync3 メディアプレイヤー | [BOOTH](https://booth.pm/ja/items/2666275) |

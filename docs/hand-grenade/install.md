@@ -21,7 +21,7 @@
 
 ## 4. パラメータ名をコピーする
 
-配置した `MA_GranadeGimmick` を選び、Inspector の MA Parameters にある **PB前置詞** のパラメータ名をコピーします。
+配置した `MA_GranadeGimmick` を選び、Inspector の MA Parameters にある **PBプレフィックス** のパラメータ名をコピーします。
 
 ![MA Parameters](images/ma-parameters.png)
 
@@ -51,7 +51,7 @@ Play モードで確認できます。
 
 **1. セーフティを解除する**
 
-アバターのメニューから `HandGrenade_ON` を ON にします。誤爆防止のため、既定では OFF です。
+アバターのメニューから `HandGrenade_ON` を ON にします。意図しない発火を防ぐため、既定では OFF です。
 
 ![メニューのセーフティ](images/menu-safety.png)
 
@@ -60,4 +60,4 @@ Play モードで確認できます。
 GameView で右クリックして設定した PhysBone を掴み、左クリックで固定します。固定するとパーティクルと音が発生します。
 
 !!! warning "使う場所と状況に配慮してください"
-    このギミックは音とパーティクルエフェクトが発生します。周囲の人の迷惑にならない範囲で使用してください。使い終わったらメニューの `HandGrenade_ON` を OFF に戻しておくと、意図しない発火を防げます。
+    このギミックは音とパーティクルエフェクトが発生します。周囲の迷惑にならない範囲で使用してください。使い終わったらメニューの `HandGrenade_ON` を OFF に戻しておくと、意図しない発火を防げます。

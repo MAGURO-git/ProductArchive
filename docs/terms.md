@@ -210,7 +210,8 @@ M.G.R Tech Creations の販売物全般
 ### 4. 権利者および権利者への問い合わせ先
 
 - 権利者: MAGURO
-- X（Twitter）: [@MaguroVrc](https://twitter.com/MaguroVrc)
+- お問い合わせ: [BOOTHメッセージ](https://maguro-vrc.booth.pm/)
+- X（Twitter）: [@MaguroVrc](https://twitter.com/MaguroVrc)（※サポート対応はBOOTHメッセージのみ）
 - ウェブサイト: <https://maguro-vrc.booth.pm/>
 
 ### 5. クレジット表記

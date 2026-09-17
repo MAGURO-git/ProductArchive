@@ -2,7 +2,7 @@
 
 <span class="badge badge--vrc">VRChat World</span>
 
-高級アパートの内装の3Dモデルです。同梱の導入手順に沿ってセットアップすると、VRChat のワールドとして使えます。
+高級アパートの内装の3Dモデルです。本マニュアルの [導入](install.md) に沿ってセットアップすると、VRChat のワールドとして使えます。
 
 - 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/items/1509768)
 - サンプルワールド: [Apartment for VRC](https://vrchat.com/home/world/wrld_fbc99e97-1a85-4f5d-b3e3-80d800823322)
