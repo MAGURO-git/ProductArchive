@@ -15,7 +15,7 @@
 
 **対処**: VCC / ALCOM で導入してからシーンを再読み込みしてください。セットアップウィンドウの「導入ページを開く」ボタンからも配布元を開けます。
 
-**導入済みなのに出ない場合**: TMP Essentials が未インポートの可能性があります。`Assets/TextMesh Pro/` フォルダが無ければ、**Window > TextMeshPro > Import TMP Essential Resources** を実行してください。この状態では診断が「日本語フォント: 導入済み」と表示するため、診断だけでは気づけません。詳しくは [導入](install.md#tmp-essentials) を参照してください。
+**導入済みなのに出ない場合**: TMP Essentials が未インポートの可能性があります。`Assets/TextMesh Pro/` フォルダが無ければ、**Window > TextMeshPro > Import TMP Essential Resources** を実行してください。この状態でも診断は日本語フォントについて警告を出さないため、診断だけでは気づけません。詳しくは [導入](install.md#tmp-essentials) を参照してください。
 
 ---
 
