@@ -1,8 +1,5 @@
 # Staff Bridge System
 
-!!! info "発売準備中の製品です"
-    Staff Bridge System は現在発売準備中です。記載している仕様や画面構成は発売時に変更される場合があります。
-
 <span class="badge badge--vrc">VRChat World</span>
 
 <div class="product-hero" markdown>
@@ -11,9 +8,12 @@
 VRChat ワールド用のイベント運営支援ギミック一式です。テレポートメニュー・インカム・一斉メッセージ・進行タイマーなどを、スタッフのSBSメニューにまとめて導入できます。
 </div>
 
-- 商品ページ: 準備中
+- 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/)
 - 利用規約: [Staff Bridge System 利用規約（PDF）](https://drive.google.com/file/d/1Y1xBQFlrfcBY5iI4gYFHOwRgYQo4pm7a/view?usp=sharing)
 - サンプルワールド: [Staff Bridge System Sample（VRChat）](https://vrchat.com/home/world/wrld_01cbbb48-44ce-4761-9baa-6f4ef87fbbfd/info)
+
+!!! info "このドキュメントについて"
+    利用規約は [利用規約](../terms.md) にまとめています。価格などの販売条件は BOOTH の商品ページをご確認ください。
 
 ## できること
 
@@ -48,36 +48,74 @@ FukuroUdon は VCC / ALCOM から導入できます。詳しくは [導入](inst
 
 ## 購入前に知っておいてほしいこと { #before-you-buy }
 
-イベント当日に困らないよう、できることの範囲をここにまとめます。購入前に目を通してください。
+イベント当日に困らないよう、仕様上の制約や前提条件をまとめます。
 
-**動作確認済みの規模は40人です。** 40人規模のイベントでの運用実績があります。それを超える大規模インスタンスでの動作は未確認です。
+<div class="constraint-grid">
+  <div class="constraint-card danger">
+    <div class="badge-row">
+      <span class="tag">排他仕様</span>
+    </div>
+    <h4>他の音声ギミックと併用不可</h4>
+    <p>防音室・個室・ボイスゾーンなど、プレイヤーの発話距離や音量を制御する他ギミックとは同時に使用できません（インカムか他ギミックのどちらか一方を選択）。</p>
+  </div>
 
-**プレイヤーの声を操作する他のギミックとは同時に使えません。** 防音室・個室・ボイスゾーン・音量調整・拡声など、声の距離やゲインを変えるギミックは、インカムと同じ VRChat の音声設定を書き換えるため、どちらも意図どおりに動かなくなります。ワールドごとに、防音室ギミックかインカムか、どちらか片方を選ぶことになります。切り替えは[インカムの一時停止](operation.md#incom-power)で行えます。
+  <div class="constraint-card important">
+    <div class="badge-row">
+      <span class="tag">動作規模</span>
+    </div>
+    <h4>確認済み規模は40人</h4>
+    <p>40人規模のイベントでの運用実績があります。それを超える大規模インスタンスでの動作は未確認です。</p>
+  </div>
 
-**スタッフ判定を使うギミックは1ワールドで合計128個までです。** 超えた分はスタッフ判定が更新されません。
+  <div class="constraint-card important">
+    <div class="badge-row">
+      <span class="tag">環境</span>
+    </div>
+    <h4>PC専用 / 前提パッケージ</h4>
+    <p>Quest実機での動作確認は行っていません。また前提パッケージとして FukuroUdon の導入が必要です。</p>
+  </div>
 
-**PC 専用です。** Quest 実機での動作確認は行っていません。
-
-**前提パッケージが必要です。** 本製品は FukuroUdon（MimyLab）を利用しています。同梱していないので、VCC / ALCOM から導入してください。
-
-**スイッチが保証するのは「イベントを1回送る」ところまでです。** 送り先のギミックが全員の画面で同じ状態になるかどうかは、送り先の作りによります。GameObject の出し入れなら同梱の `StaffObjectToggle` で足ります。
+  <div class="constraint-card">
+    <div class="badge-row">
+      <span class="tag">上限・仕様</span>
+    </div>
+    <h4>判定ギミックは最大128個</h4>
+    <p>スタッフ判定を使うギミックは1ワールド合計128個までです。スイッチは「1回のイベント発火」を担います。</p>
+  </div>
+</div>
 
 !!! warning "本番前に実機で確認してください"
-    ワールドの構成や同時に動く他のギミックによって、想定どおりに動作しないことがあります。本番と同じワールドで一通りの機能を動かして確認してください（[本番前の確認](operation.md#pre-event-check)）。
-
-    イベント当日に不具合が生じた場合や、それによって進行に生じた損害について、こちらでは責任を負えません。
+    ワールドの構成や同時に動く他のギミックによって、想定どおりに動作しないことがあります。本番と同じワールドで一通りの機能を動かして確認してください（[本番前の確認](operation.md#pre-event-check)）。イベント当日の不具合や、それによって進行に生じた損害について責任を負えません。
 
 ## ドキュメントの読み進めかた
 
-1. [機能一覧](features.md) — 何ができるかを一覧で見る
-2. [導入](install.md) — 前提パッケージの用意からセットアップまで
-3. [スタッフの操作ガイド](usage.md) — ワールド内での操作
-4. [やりたいことから探す](howto.md) — 目的別に、触る場所を引く
-5. [運用ガイド](operation.md) — イベント当日の使い方と設計の考え方
-6. [設定リファレンス](reference.md) — Inspector の各項目
-7. [見た目のカスタマイズ](customize.md) — テーマ・フォント
-8. [トラブルシューティング](troubleshoot.md) — 症状別の対処
-9. [よくある質問](faq.md)
+あなたの役割や目的に合わせてガイドをご案内します。
+
+<div class="guide-nav-grid">
+  <a href="install.md" class="guide-nav-card">
+    <div class="icon">🚀</div>
+    <div class="title">ワールド制作者 <span>→</span></div>
+    <div class="desc">前提パッケージの導入からセットアップ、Unity上でのカスタマイズ手順を確認できます。</div>
+  </a>
+
+  <a href="usage.md" class="guide-nav-card">
+    <div class="icon">🎪</div>
+    <div class="title">当日スタッフ <span>→</span></div>
+    <div class="desc">ワールド内でのメニュー操作・インカム・タイマーの使い方をUnity用語なしで説明しています。</div>
+  </a>
+
+  <a href="for-developers.md" class="guide-nav-card">
+    <div class="icon">⚙️</div>
+    <div class="title">ギミック開発者 <span>→</span></div>
+    <div class="desc">自作UdonスクリプトとSBSのスイッチやスタッフ判定を連携させる方法を解説しています。</div>
+  </a>
+
+  <a href="faq.md" class="guide-nav-card">
+    <div class="icon">📋</div>
+    <div class="title">購入前・ライセンス <span>→</span></div>
+    <div class="desc">個人・チームライセンスの数えかたや、よくある質問を視覚的にまとめています。</div>
+  </a>
+</div>
 
 ## スタッフの付与について
 

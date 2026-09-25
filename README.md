@@ -14,10 +14,9 @@ BOOTHショップ「[M.G.R Tech Creations](https://maguro-vrc.booth.pm/)」で�
 | Apartment for VRC | [マニュアル](https://maguro-git.github.io/ProductArchive/apartment/) |
 | ハンドグレネードギミック | [マニュアル](https://maguro-git.github.io/ProductArchive/hand-grenade/) |
 | 無人航空機 / UAV | [マニュアル](https://maguro-git.github.io/ProductArchive/uav/) |
+| Staff Bridge System | [マニュアル](https://maguro-git.github.io/ProductArchive/staff-bridge-system/) |
 
 マニュアルが未整備の製品は、更新履歴のみ[サイト](https://maguro-git.github.io/ProductArchive/)に掲載しています。
-
-開発中の製品として、Staff Bridge System の[マニュアル](https://maguro-git.github.io/ProductArchive/staff-bridge-system/)を先行公開しています（未発売・内容は変更される可能性があります）。
 
 ## お問い合わせ
 

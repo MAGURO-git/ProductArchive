@@ -294,3 +294,383 @@
   width: auto;
   height: auto;
 }
+
+/* ==========================================================================
+   ライセンスガイド用コンポーネント（FAQ / マニュアル用）
+   ========================================================================== */
+.md-typeset .license-card-container {
+  margin: 1.2em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.md-typeset .license-card-inner {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+
+.md-typeset .license-card-lead {
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.md-typeset .license-feature-list {
+  list-style: none;
+  margin: 0 0 12px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.md-typeset .license-feature-list li {
+  position: relative;
+  padding-left: 24px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.md-typeset .license-feature-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 2px;
+  color: var(--md-accent-fg-color);
+  font-weight: bold;
+}
+
+.md-typeset .license-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+@media screen and (max-width: 45em) {
+  .md-typeset .license-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.md-typeset .license-box {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  background: var(--md-default-bg-color);
+}
+
+.md-typeset .license-box.target {
+  border-color: var(--md-accent-fg-color);
+  border-width: 2px;
+}
+
+.md-typeset .license-box h4 {
+  margin: 0 0 4px 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.md-typeset .license-box .desc {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 8px;
+}
+
+.md-typeset .license-box ul {
+  list-style: none;
+  margin: 0 0 12px 0;
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.md-typeset .license-box ul li::before {
+  content: "・";
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .license-tag {
+  margin-top: auto;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.md-typeset .license-tag.need {
+  background: var(--md-accent-fg-color--transparent);
+  color: var(--md-accent-fg-color);
+  border: 1px solid var(--md-accent-fg-color);
+}
+
+.md-typeset .license-tag.free {
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color--light);
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .license-pricing-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 45em) {
+  .md-typeset .license-pricing-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.md-typeset .pricing-item {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  background: var(--md-default-bg-color);
+  font-size: 0.8rem;
+}
+
+.md-typeset .pricing-item.highlight {
+  border-color: var(--md-accent-fg-color);
+  background: var(--md-accent-fg-color--transparent);
+}
+
+.md-typeset .pricing-item .num {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.md-typeset .pricing-item .plan {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+}
+
+.md-typeset .license-rule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.md-typeset .license-rule-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color);
+}
+
+.md-typeset .license-rule-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.md-typeset .license-rule-badge.ok {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.md-typeset .license-rule-badge.ng {
+  background: #c62828;
+  color: #fff;
+}
+
+.md-typeset .license-rule-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.md-typeset .license-rule-text small {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   汎用ガイド・ナビゲーション・ステップ用コンポーネント
+   ========================================================================== */
+
+/* 1. ペルソナ別・目的別ナビゲーションカード */
+.md-typeset .guide-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 1.4em 0;
+}
+
+.md-typeset .guide-nav-card {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+  color: var(--md-default-fg-color) !important;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset .guide-nav-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.md-typeset .guide-nav-card .icon {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.md-typeset .guide-nav-card .title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.md-typeset .guide-nav-card .desc {
+  font-size: 0.82rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 2. 注意事項・制約事項カード */
+.md-typeset .constraint-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 1.2em 0;
+}
+
+.md-typeset .constraint-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 16px 18px;
+  background: var(--md-default-bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.md-typeset .constraint-card.important {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.04);
+}
+
+.md-typeset .constraint-card.danger {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.04);
+}
+
+.md-typeset .constraint-card .badge-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.md-typeset .constraint-card .tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.md-typeset .constraint-card.important .tag {
+  background: rgba(245, 158, 11, 0.15);
+  color: #b45309;
+}
+
+.md-typeset .constraint-card.danger .tag {
+  background: rgba(239, 68, 68, 0.15);
+  color: #b91c1c;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .constraint-card.important .tag {
+  color: #fbbf24;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .constraint-card.danger .tag {
+  color: #f87171;
+}
+
+.md-typeset .constraint-card h4 {
+  margin: 0 0 6px 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.md-typeset .constraint-card p {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--md-default-fg-color--light);
+  margin: 0;
+}
+
+/* 3. ステップナビゲーションカード */
+.md-typeset .step-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 1.4em 0;
+}
+
+.md-typeset .step-item {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 18px 20px;
+  background: var(--md-default-bg-color);
+  position: relative;
+}
+
+.md-typeset .step-item-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.md-typeset .step-num {
+  font-size: 0.8rem;
+  font-weight: 800;
+  background: var(--md-accent-fg-color);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.05em;
+}
+
+.md-typeset .step-item-head h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  padding: 0;
+}
+
+.md-typeset .step-body {
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+

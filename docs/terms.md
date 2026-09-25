@@ -14,10 +14,11 @@
 
 下表は各製品の主な条件です。**特記のない製品には、このページの共通規約がそのまま適用されます。**
 
-共通規約とは別の規約が適用されるのは、現在この2つだけです。
+共通規約とは別の規約が適用されるのは、現在この3つだけです。
 
 - **[Apartment for VRC](apartment/index.md)** — [専用の利用規約](apartment/terms.md)。R-18 / R-18G を含むコンテンツでの利用ができます（例外あり）
 - **[SF-ROOM for VRC](sf-room/index.md) の SDK2 データ** — [UV ライセンス](https://uv-license.com/ja/license?utf8=%E2%9C%93&pcu=true&ccu=true&seu=true&veu=true&remarks=true)。SDK3 データは共通規約です
+- **[Staff Bridge System](staff-bridge-system/index.md)** — [専用の利用規約（PDF）](https://drive.google.com/file/d/1Y1xBQFlrfcBY5iI4gYFHOwRgYQo4pm7a/view?usp=sharing)。チームライセンスおよびスタッフ運用の特記事項があります
 
 | 製品 | 商用利用 | 改変 | 再配布 | パブリック化 |
 |---|---|---|---|---|
@@ -28,11 +29,12 @@
 | [Apartment for VRC](apartment/index.md) | 可 | 可 | 不可（例外あり） | 可 |
 | [ハンドグレネードギミック](hand-grenade/index.md) | 可 | 可 | 不可 | — |
 | [無人航空機 / UAV](uav/index.md) | 可 | 可 | 不可 | — |
+| [Staff Bridge System](staff-bridge-system/index.md) | 可 | 可 | 不可（例外あり） | 可 |
 
 「—」はその製品に該当する項目がないことを示します。
 
 !!! info "「不可（例外あり）」について"
-    Apartment for VRC と SF-ROOM for VRC の SDK2 データは、**購入者本人を含む2名まで**であれば、同じデータを共有して制作できます（追加の購入は不要）。
+    Apartment for VRC と SF-ROOM for VRC の SDK2 データは、**購入者本人を含む2名まで**であれば、同じデータを共有して制作できます（追加の購入は不要）。Staff Bridge System は、チームライセンスにおいて同一運営団体内での共有制作が認められています。
 
 ---
 

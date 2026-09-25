@@ -2,63 +2,72 @@
 
 新規・既存のワールドとも同じ手順です。[必要環境](index.md)を確認してから始めてください。
 
-## 1. 前提パッケージを導入する
-
+<div class="step-container">
+  <div class="step-item">
+    <div class="step-item-head">
+      <span class="step-num">STEP 1</span>
+      <h3>前提パッケージを導入する</h3>
+    </div>
+    <div class="step-body" markdown>
 VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`com.mimylab.fukuroudon`）を追加してください。**インカムを使わない場合も必要です。** 日本語表示用のフォントは依存パッケージとして一緒に入ります。
 
-動作確認済みは 3.19.5 です。導入後はバージョンを固定し、更新時は診断と実機確認を行ってください。
+`Assets/TextMesh Pro/` が無い場合は、**Window > TextMeshPro > Import TMP Essential Resources** を実行してください。 <span id="tmp-essentials"></span>
+    </div>
+  </div>
 
-### TMP Essentials をインポートする { #tmp-essentials }
-
-`Assets/TextMesh Pro/` が無い場合は、**Window > TextMeshPro > Import TMP Essential Resources** を実行してください。すでに導入済みなら不要です。
-
-日本語が表示されない場合は、前提パッケージとTMP Essentialsの両方を確認してください（[文字が表示されない場合](troubleshoot.md)）。
-
-### 前提パッケージのライセンスについて
-
-前提パッケージは本製品に同梱していません。ライセンスと配布元は次のとおりです。
-
-- [FukuroUdon](https://github.com/mimyquality/FukuroUdon)：MIT License
-- [TextMesh Pro VRC Fallback Font JP](https://github.com/Narazaka/tmp-fallback-fonts-jp)：SIL Open Font License
-
-## 2. unitypackage をインポートする
-
+  <div class="step-item">
+    <div class="step-item-head">
+      <span class="step-num">STEP 2</span>
+      <h3>unitypackage をインポートする</h3>
+    </div>
+    <div class="step-body" markdown>
 ワールドプロジェクトにインポートします。`Assets/MGR/Udon/StaffBridgeSystem/` に展開されます。
+`Prefabs`・`Audio`・`Samples`などのサブフォルダ構成は維持してください。
+    </div>
+  </div>
 
-`Prefabs`・`Audio`・`Samples`などのサブフォルダ構成は維持してください。ファイルを移動すると参照できなくなります。
-
-## 3. セットアップウィンドウを開く
-
-**Tools > MGR > Staff Bridge System > セットアップ** を開きます。先頭に前提パッケージの不足が表示された場合は、「導入ページを開く」から追加してください。
+  <div class="step-item">
+    <div class="step-item-head">
+      <span class="step-num">STEP 3</span>
+      <h3>セットアップウィンドウを開く</h3>
+    </div>
+    <div class="step-body" markdown>
+メニューバーの **Tools > MGR > Staff Bridge System > セットアップ** を開きます。
+先頭に前提パッケージの不足が表示された場合は、「導入ページを開く」から追加してください。
 
 ![セットアップページ](images/setup-tab.png)
+    </div>
+  </div>
 
-## 4. 「セットアップする」を押す
-
-### ボタンの上の入力
-
-必要に応じて入力し、「セットアップする」を押してください。空欄・既定値のままでも実行できます。
+  <div class="step-item">
+    <div class="step-item-head">
+      <span class="step-num">STEP 4</span>
+      <h3>「セットアップする」を押す</h3>
+    </div>
+    <div class="step-body" markdown>
+必要に応じて最初からスタッフにしておく人の表示名を入力し、「セットアップする」を押します。
 
 | 項目 | 入力・動作 |
 |---|---|
-| 最初からスタッフにしておく人 | VRChatの表示名を1行に1人ずつ入力。入室時に自動でスタッフになります。空欄なら既存の名簿を維持します |
-| 手動でスタッフになった人を再入場時にスタッフへ戻す | 当日スタッフの付与を保存し、次のインスタンスでも復帰させます。既定ON |
+| 最初からスタッフにしておく人 | VRChatの表示名を1行に1人ずつ入力。空欄なら既存の名簿を維持します |
+| 手動でスタッフになった人を再入場時にスタッフへ戻す | 当日スタッフの付与を保存し、次のインスタンスでも復帰させます（既定ON） |
 
-名簿・SBSメニュー・インカムの音声基盤・スタッフ切替／一括解除スイッチを配置し、接続まで行います。すでにあるものは置き直しません。名簿はあとから「スタッフ名簿」ページで編集できます。
+名簿・SBSメニュー・インカムの音声基盤・スタッフ切替スイッチが自動配置され、相互配線が完了します。
+    </div>
+  </div>
 
-!!! warning "切替スイッチの置き場所を確認してください"
-    触れた人が自分をスタッフにできます。スタッフ以外が入れない場所に移すか、使わない場合は削除してください。付与方法は[運用ガイド](operation.md#staff-detection)を参照してください。
-
-### SBSメニューのタブを決める { #menu-config }
-
-使わないタブの非表示や並べ替えは、**カスタマイズ > メニュー構成**から行います。手順は[メニュー構成の変更](howto.md#menu-config)を参照してください。
-
-## 5. 動作を確認してアップロードする
-
+  <div class="step-item">
+    <div class="step-item-head">
+      <span class="step-num">STEP 5</span>
+      <h3>動作を確認してアップロードする</h3>
+    </div>
+    <div class="step-body" markdown>
 1. 「診断・修復」で指摘を確認・修復します。
 2. UnityのPlayモードで、名簿への登録または切替スイッチで自分をスタッフにしてメニューの開閉と操作を確認します（[操作ガイド](usage.md)）。
-3. StaffRegistryの「ログ出力する」をOFFにしてアップロードします。ONのままだとスタッフの表示名がConsoleに出続け、アップロード時に警告が出ます。
-4. アップロード先で、通話や同期を含めた[本番前の確認](operation.md#pre-event-check)を行います。
+3. StaffRegistryの「ログ出力する」をOFFにしてアップロードします。
+    </div>
+  </div>
+</div>
 
 ## 既存のワールドへの後付け
 

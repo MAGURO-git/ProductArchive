@@ -1,13 +1,19 @@
 # MkDocs のビルド成果物（GitHub Actions 側で生成する）
 /site/
 /site-preview/
+/site_preview/
 
 # 未発売商品のローカルプレビュー用（商品名を公開したくないので、除外設定は
 # .git/info/exclude 側に書く。このファイルは公開される）。
 /mkdocs.local.yml
+
+# 作業用プレビュー画像
+docs/staff-bridge-system/images/*-preview.png
+docs/staff-bridge-system/images/license-slide-*.png
 
 # Python
 __pycache__/
 *.py[cod]
 .venv/
 venv/
+

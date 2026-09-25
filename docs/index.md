@@ -1,6 +1,6 @@
 # M.G.R Tech Creations ドキュメント
 
-BOOTHショップ **[M.G.R Tech Creations](https://maguro-vrc.booth.pm/)** で販売している製品と、開発中の製品のマニュアルです。
+BOOTHショップ **[M.G.R Tech Creations](https://maguro-vrc.booth.pm/)** で販売している製品のマニュアルです。
 
 ## 製品一覧
 
@@ -54,20 +54,12 @@ BOOTHショップ **[M.G.R Tech Creations](https://maguro-vrc.booth.pm/)** で�
 <span class="badge">Unity 3D Model</span>
 </div>
 
-</div>
-
-## 開発中
-
-まだ販売していない製品のドキュメントです。内容は変更される可能性があります。
-
-<div class="product-grid" markdown>
-
 <div class="product-card" markdown>
 [![Staff Bridge System](staff-bridge-system/images/icon.png){ .product-icon }](staff-bridge-system/index.md)
 
 ### [Staff Bridge System](staff-bridge-system/index.md)
 
-<span class="badge">開発中</span>
+<span class="badge badge--vrc">VRChat World</span>
 </div>
 
 </div>
