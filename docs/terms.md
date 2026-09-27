@@ -18,7 +18,7 @@
 
 - **[Apartment for VRC](apartment/index.md)** — [専用の利用規約](apartment/terms.md)。R-18 / R-18G を含むコンテンツでの利用ができます（例外あり）
 - **[SF-ROOM for VRC](sf-room/index.md) の SDK2 データ** — [UV ライセンス](https://uv-license.com/ja/license?utf8=%E2%9C%93&pcu=true&ccu=true&seu=true&veu=true&remarks=true)。SDK3 データは共通規約です
-- **[Staff Bridge System](staff-bridge-system/index.md)** — [専用の利用規約（PDF）](https://drive.google.com/file/d/1Y1xBQFlrfcBY5iI4gYFHOwRgYQo4pm7a/view?usp=sharing)。チームライセンスおよびスタッフ運用の特記事項があります
+- **[Staff Bridge System](staff-bridge-system/index.md)** — [専用の利用規約（PDF）](https://drive.google.com/file/d/1udZaWP37aN14rFh5DS4WfA0J7ZAQSaax/view?usp=sharing)。チームライセンスおよびスタッフ運用の特記事項があります
 
 | 製品 | 商用利用 | 改変 | 再配布 | パブリック化 |
 |---|---|---|---|---|

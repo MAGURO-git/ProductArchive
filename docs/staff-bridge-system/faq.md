@@ -13,7 +13,7 @@
 
 ## ライセンス・購入について
 
-ここは要約です。正式な利用条件は [Staff Bridge System 利用規約（PDF）](https://drive.google.com/file/d/1Y1xBQFlrfcBY5iI4gYFHOwRgYQo4pm7a/view?usp=sharing) を参照してください。
+ここは要約です。正式な利用条件は [Staff Bridge System 利用規約（PDF）](https://drive.google.com/file/d/1udZaWP37aN14rFh5DS4WfA0J7ZAQSaax/view?usp=sharing) を参照してください。
 
 複数のワールドで使えますか？
 :   購入者本人のワールドであれば使えます。追加購入は不要です。

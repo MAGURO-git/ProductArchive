@@ -9,11 +9,11 @@ VRChat ワールド用のイベント運営支援ギミック一式です。テ�
 </div>
 
 - 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/items/8682451)
-- 利用規約: [Staff Bridge System 利用規約（PDF）](https://drive.google.com/file/d/1Y1xBQFlrfcBY5iI4gYFHOwRgYQo4pm7a/view?usp=sharing)
+- 利用規約: [Staff Bridge System 利用規約（PDF）](https://drive.google.com/file/d/1udZaWP37aN14rFh5DS4WfA0J7ZAQSaax/view?usp=sharing)
 - サンプルワールド: [Staff Bridge System Sample（VRChat）](https://vrchat.com/home/world/wrld_01cbbb48-44ce-4761-9baa-6f4ef87fbbfd/info)
 
 !!! info "このドキュメントについて"
-    利用規約は [利用規約](../terms.md) にまとめています。価格などの販売条件は BOOTH の商品ページをご確認ください。
+    本製品には専用の [利用規約（PDF）](https://drive.google.com/file/d/1udZaWP37aN14rFh5DS4WfA0J7ZAQSaax/view?usp=sharing) が適用されます（全体の区分は [利用規約](../terms.md) を参照）。価格などの販売条件は BOOTH の商品ページをご確認ください。
 
 ## できること
 
@@ -57,7 +57,7 @@ FukuroUdon は VCC / ALCOM から導入できます。詳しくは [導入](inst
 - **本番前の実機確認**:
   ワールドの構成や同時に動く他のギミックによって、想定どおりに動作しないことがあります。本番と同じワールドで一通りの機能を動かして事前にご確認ください（詳細は[本番前の確認](operation.md#pre-event-check)）。
 - **利用規約・ライセンス**:
-  本製品の利用条件は [利用規約](../terms.md) に準拠します。個人版（P）とチーム版（T）のライセンス区分については [よくある質問（FAQ）](faq.md) をご確認ください。
+  本製品には専用の規約が適用されます。詳細は [Staff Bridge System 利用規約（PDF）](https://drive.google.com/file/d/1udZaWP37aN14rFh5DS4WfA0J7ZAQSaax/view?usp=sharing) をご確認ください。個人版（P）とチーム版（T）のライセンス区分については [よくある質問（FAQ）](faq.md) をご確認ください。
 
 ## ドキュメントの読み進めかた
 
