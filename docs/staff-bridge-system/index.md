@@ -5,7 +5,7 @@
 <div class="product-hero" markdown>
 ![Staff Bridge System](images/icon.png){ .product-icon }
 
-VRChat ワールド用のイベント運営支援ギミック一式です。テレポートメニュー・インカム・一斉メッセージ・進行タイマーなどを、スタッフのSBSメニューにまとめて導入できます。
+VRChat ワールド用のイベント運営支援ギミック一式です。テレポート・インカム・一斉メッセージ・進行タイマーなどの機能を、スタッフ専用メニュー「SBSメニュー」にまとめています。
 </div>
 
 - 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/items/8682451)
