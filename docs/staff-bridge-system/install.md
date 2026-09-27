@@ -2,49 +2,57 @@
 
 新規・既存のワールドとも同じ手順です。[必要環境](index.md)を確認してから始めてください。
 
-<div class="step-container">
-  <div class="step-item">
-    <div class="step-item-head">
-      <span class="step-num">STEP 1</span>
-      <h3>前提パッケージを導入する</h3>
-    </div>
-    <div class="step-body" markdown>
+<div class="step-container" markdown="1">
+
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 1</span>
+<h3>前提パッケージを導入する</h3>
+</div>
+<div class="step-body" markdown="1">
+
 VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`com.mimylab.fukuroudon`）を追加してください。**インカムを使わない場合も必要です。** 日本語表示用のフォントは依存パッケージとして一緒に入ります。
 
 `Assets/TextMesh Pro/` が無い場合は、**Window > TextMeshPro > Import TMP Essential Resources** を実行してください。 <span id="tmp-essentials"></span>
-    </div>
-  </div>
 
-  <div class="step-item">
-    <div class="step-item-head">
-      <span class="step-num">STEP 2</span>
-      <h3>unitypackage をインポートする</h3>
-    </div>
-    <div class="step-body" markdown>
+</div>
+</div>
+
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 2</span>
+<h3>unitypackage をインポートする</h3>
+</div>
+<div class="step-body" markdown="1">
+
 ワールドプロジェクトにインポートします。`Assets/MGR/Udon/StaffBridgeSystem/` に展開されます。
 `Prefabs`・`Audio`・`Samples`などのサブフォルダ構成は維持してください。
-    </div>
-  </div>
 
-  <div class="step-item">
-    <div class="step-item-head">
-      <span class="step-num">STEP 3</span>
-      <h3>セットアップウィンドウを開く</h3>
-    </div>
-    <div class="step-body" markdown>
+</div>
+</div>
+
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 3</span>
+<h3>セットアップウィンドウを開く</h3>
+</div>
+<div class="step-body" markdown="1">
+
 メニューバーの **Tools > MGR > Staff Bridge System > セットアップ** を開きます。
 先頭に前提パッケージの不足が表示された場合は、「導入ページを開く」から追加してください。
 
 ![セットアップページ](images/setup-tab.png)
-    </div>
-  </div>
 
-  <div class="step-item">
-    <div class="step-item-head">
-      <span class="step-num">STEP 4</span>
-      <h3>「セットアップする」を押す</h3>
-    </div>
-    <div class="step-body" markdown>
+</div>
+</div>
+
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 4</span>
+<h3>「セットアップする」を押す</h3>
+</div>
+<div class="step-body" markdown="1">
+
 必要に応じて最初からスタッフにしておく人の表示名を入力し、「セットアップする」を押します。
 
 | 項目 | 入力・動作 |
@@ -53,20 +61,24 @@ VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`co
 | 手動でスタッフになった人を再入場時にスタッフへ戻す | 当日スタッフの付与を保存し、次のインスタンスでも復帰させます（既定ON） |
 
 名簿・SBSメニュー・インカムの音声基盤・スタッフ切替スイッチが自動配置され、相互配線が完了します。
-    </div>
-  </div>
 
-  <div class="step-item">
-    <div class="step-item-head">
-      <span class="step-num">STEP 5</span>
-      <h3>動作を確認してアップロードする</h3>
-    </div>
-    <div class="step-body" markdown>
+</div>
+</div>
+
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 5</span>
+<h3>動作を確認してアップロードする</h3>
+</div>
+<div class="step-body" markdown="1">
+
 1. 「診断・修復」で指摘を確認・修復します。
 2. UnityのPlayモードで、名簿への登録または切替スイッチで自分をスタッフにしてメニューの開閉と操作を確認します（[操作ガイド](usage.md)）。
 3. StaffRegistryの「ログ出力する」をOFFにしてアップロードします。
-    </div>
-  </div>
+
+</div>
+</div>
+
 </div>
 
 ## ギミックを個別に追加する { #single-prefab }
