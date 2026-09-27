@@ -85,25 +85,21 @@ FukuroUdon は VCC / ALCOM から導入できます。詳しくは [導入](inst
 
 <div class="guide-nav-grid">
   <a href="install.md" class="guide-nav-card">
-    <div class="icon">🚀</div>
     <div class="title">ワールド制作者 <span>→</span></div>
     <div class="desc">前提パッケージの導入からセットアップ、Unity上でのカスタマイズ手順を確認できます。</div>
   </a>
 
   <a href="usage.md" class="guide-nav-card">
-    <div class="icon">🎪</div>
     <div class="title">当日スタッフ <span>→</span></div>
     <div class="desc">ワールド内でのメニュー操作・インカム・タイマーの使い方をUnity用語なしで説明しています。</div>
   </a>
 
   <a href="for-developers.md" class="guide-nav-card">
-    <div class="icon">⚙️</div>
     <div class="title">ギミック開発者 <span>→</span></div>
     <div class="desc">自作UdonスクリプトとSBSのスイッチやスタッフ判定を連携させる方法を解説しています。</div>
   </a>
 
   <a href="faq.md" class="guide-nav-card">
-    <div class="icon">📋</div>
     <div class="title">購入前・ライセンス <span>→</span></div>
     <div class="desc">個人・チームライセンスの数えかたや、よくある質問を視覚的にまとめています。</div>
   </a>
