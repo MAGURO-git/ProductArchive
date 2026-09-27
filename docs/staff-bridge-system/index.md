@@ -74,14 +74,6 @@ FukuroUdon は VCC / ALCOM から導入できます。詳しくは [導入](inst
     <h4>PC専用 / 前提パッケージ</h4>
     <p>Quest実機での動作確認は行っていません。また前提パッケージとして FukuroUdon の導入が必要です。</p>
   </div>
-
-  <div class="constraint-card">
-    <div class="badge-row">
-      <span class="tag">上限・仕様</span>
-    </div>
-    <h4>判定ギミックは最大128個</h4>
-    <p>スタッフ判定を使うギミックは1ワールド合計128個までです。スイッチは「1回のイベント発火」を担います。</p>
-  </div>
 </div>
 
 !!! warning "本番前に実機で確認してください"
