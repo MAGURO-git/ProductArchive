@@ -1,23 +1,70 @@
 # 導入
 
-## 1. ダウンロードしたファイルを展開する
+新規のワールドプロジェクトへの導入手順です。[必要環境](index.md)を確認してから始めてください。
 
-BOOTH は1ファイル 1GB が上限のため、ファイルを分割しています。`SF-Room for VRC 1.1.0.zip.001` と `.002` を同じフォルダに置いてから解凍してください。
+<div class="step-container" markdown="1">
 
-一部のテクスチャは外部クラウドストレージに置いています。同梱の `テクスチャのダウンロードリンク.txt` からアクセスしてください。
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 1</span>
+<h3>ダウンロードしたファイルを解凍する</h3>
+</div>
+<div class="step-body" markdown="1">
 
-## 2. プロジェクトを作成する
+BOOTHのファイルサイズ上限に伴いファイルが分割されています。
+`SF-Room for VRC 1.1.0.zip.001` と `.002` を同じフォルダに置き、7-Zip や WinRAR などの解凍ソフトで展開してください。
 
-VCC からワールドの新規プロジェクトを作成します（Unity 2022.3.6f1）。
+</div>
+</div>
 
-## 3. VizVid を導入する
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 2</span>
+<h3>追加テクスチャをダウンロードする</h3>
+</div>
+<div class="step-body" markdown="1">
 
-[VizVid](https://github.com/JLChnToZ/VVMW) を VCC に追加し、プロジェクトへインポートします。同梱していないため、別途の導入が必要です。
+同梱されている「**テクスチャのダウンロードリンク.txt**」を開き、記載されたURLから高解像度テクスチャパッケージをダウンロードしてください。
 
-## 4. SF-ROOM をインポートする
+</div>
+</div>
 
-プロジェクトを開いてから SF-ROOM の unitypackage をインポートします。
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 3</span>
+<h3>プロジェクト作成と必須アセットの導入</h3>
+</div>
+<div class="step-body" markdown="1">
 
-## 5. シーンを開いてアップロードする
+VCC / ALCOM から VRChat ワールド用の新規プロジェクトを作成（Unity 2022.3.22f1 推奨）し、ビデオプレイヤー [VizVid](https://github.com/JLChnToZ/VVMW) を導入します。
 
-シーンを開き、ワールド名とサムネイルを設定して「Build and Upload」を実行します。
+</div>
+</div>
+
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 4</span>
+<h3>unitypackage をインポートする</h3>
+</div>
+<div class="step-body" markdown="1">
+
+1. 解凍して得られた `SF-ROOM` の unitypackage（SDK3対応版）をインポートします。
+2. STEP 2 でダウンロードした追加テクスチャパッケージをインポートします。
+
+</div>
+</div>
+
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 5</span>
+<h3>シーンを開いて確認・アップロード</h3>
+</div>
+<div class="step-body" markdown="1">
+
+`Assets/MGR/SFRoom/Scenes/` 配下のシーンファイルを開きます。
+Play モードに入って昇降パネルの操作やライティングを確認した後、VRChat SDK コントロールパネルからアップロードを実行します。
+
+</div>
+</div>
+
+</div>

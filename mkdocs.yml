@@ -71,33 +71,50 @@ nav:
       - gray-oasis/index.md
       - 導入: gray-oasis/install.md
       - ギミック一覧: gray-oasis/gimmicks.md
+      - ライティング調整: gray-oasis/customize.md
+      - トラブルシューティング: gray-oasis/troubleshoot.md
       - 使用アセット: gray-oasis/credits.md
       - 更新履歴: gray-oasis/changelog.md
   - Japan Classroom:
       - japan-classroom/index.md
       - 導入: japan-classroom/install.md
       - ギミック一覧: japan-classroom/gimmicks.md
+      - 夕方シーンの光調整: japan-classroom/customize.md
+      - トラブルシューティング: japan-classroom/troubleshoot.md
       - 使用アセット: japan-classroom/credits.md
       - 更新履歴: japan-classroom/changelog.md
   - SF-ROOM for VRC:
       - sf-room/index.md
       - 導入: sf-room/install.md
       - ギミック一覧: sf-room/gimmicks.md
+      - 演出の調整: sf-room/customize.md
+      - トラブルシューティング: sf-room/troubleshoot.md
       - 使用アセット: sf-room/credits.md
       - 更新履歴: sf-room/changelog.md
   - Apartment for VRC:
       - apartment/index.md
       - 導入: apartment/install.md
+      - ギミック一覧: apartment/gimmicks.md
+      - トラブルシューティング: apartment/troubleshoot.md
       - 使用アセット: apartment/credits.md
       - 利用規約: apartment/terms.md
       - 更新履歴: apartment/changelog.md
   - ハンドグレネードギミック:
       - hand-grenade/index.md
       - 導入: hand-grenade/install.md
+      - カスタマイズ: hand-grenade/customize.md
+      - トラブルシューティング: hand-grenade/troubleshoot.md
       - 更新履歴: hand-grenade/changelog.md
   - 無人航空機 / UAV:
       - uav/index.md
+      - 導入: uav/install.md
+      - トラブルシューティング: uav/troubleshoot.md
       - 更新履歴: uav/changelog.md
+  - Light Set:
+      - light-set/index.md
+      - 導入: light-set/install.md
+      - トラブルシューティング: light-set/troubleshoot.md
+      - 更新履歴: light-set/changelog.md
   # 開発中（未発売）。発売したら他の製品と同じ並びへ移す。
   - Staff Bridge System:
       - staff-bridge-system/index.md
@@ -112,6 +129,3 @@ nav:
       - よくある質問: staff-bridge-system/faq.md
       - 自作ギミックとつなぐ: staff-bridge-system/for-developers.md
       - 更新履歴: staff-bridge-system/changelog.md
-  # マニュアル未整備の製品は、更新履歴だけ先に置いてある。
-  - 更新履歴:
-      - Light Set: light-set/changelog.md

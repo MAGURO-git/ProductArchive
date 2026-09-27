@@ -1,63 +1,122 @@
 # 導入
 
-同じ内容を動画でも公開しています。
+Modular Avatar を使用したアバターへの導入手順です。[必要環境](index.md)を確認してから始めてください。
+
+同じ手順を動画でもご確認いただけます。
 
 <https://youtu.be/VFBRsUQBYxI>
 
-## 1. 必須アセットを導入する
+<div class="step-container" markdown="1">
+
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 1</span>
+<h3>必須アセットを導入する</h3>
+</div>
+<div class="step-body" markdown="1">
+
+VCC / ALCOM から次の2つのパッケージをアバタープロジェクトに追加します。
 
 - [Modular Avatar](https://modular-avatar.nadena.dev/ja)
 - [lilToon](https://lilxyzw.github.io/lilToon/)
 
-## 2. Prefab をアバター直下に配置する
+</div>
+</div>
 
-`MA_GranadeGimmick` をアバターの直下に置きます。
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 2</span>
+<h3>Prefab をアバター直下に配置する</h3>
+</div>
+<div class="step-body" markdown="1">
+
+Project ウィンドウから `MA_GranadeGimmick` Prefab を、アバターのルートオブジェクト直下にドラッグ＆ドロップして配置します。
 
 ![アバター直下に配置した状態](images/place-prefab.png)
 
-## 3. パーティクルの発生位置を調整する
+</div>
+</div>
 
-配置した **`MA_GranadeGimmick` 自体の Transform** を動かして、手榴弾のエフェクトが出る位置をアバターに合わせます。子オブジェクトではなく、この Prefab のルートを動かしてください。
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 3</span>
+<h3>パーティクルの発生位置を調整する</h3>
+</div>
+<div class="step-body" markdown="1">
 
-## 4. パラメータ名をコピーする
+配置した **`MA_GranadeGimmick` 自体の Transform** を動かして、手榴弾のエフェクトが出る位置をアバターの体格に合わせます。子オブジェクトではなく、この Prefab のルートを動かしてください。
 
-配置した `MA_GranadeGimmick` を選び、Inspector の MA Parameters にある **PBプレフィックス** のパラメータ名をコピーします。
+</div>
+</div>
+
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 4</span>
+<h3>パラメータ名をコピーする</h3>
+</div>
+<div class="step-body" markdown="1">
+
+配置した `MA_GranadeGimmick` を選択し、Inspector の MA Parameters にある **PBプレフィックス** のパラメータ名をクリップボードにコピーします。
 
 ![MA Parameters](images/ma-parameters.png)
 
-## 5. 発火させたい PhysBone を選ぶ
+</div>
+</div>
 
-掴んで固定したときにギミックを動かしたい PhysBone を、ヒエラルキーで選択します。スカートやアホ毛など、掴みやすいものが向いています。
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 5</span>
+<h3>発火させたい PhysBone を選ぶ</h3>
+</div>
+<div class="step-body" markdown="1">
+
+掴んで固定したときにギミックを動かしたい PhysBone（スカート、リボン、アホ毛など）を、Hierarchy で選択します。
 
 ![PhysBone を選択](images/select-physbone.png)
 
-## 6. PhysBone を設定する
+</div>
+</div>
 
-選んだ PhysBone のコンポーネントで、次の3つを設定します。
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 6</span>
+<h3>PhysBone のパラメータを設定する</h3>
+</div>
+<div class="step-body" markdown="1">
 
-| 場所 | 項目 | 値 |
+選択した PhysBone コンポーネントで、次の3項目を設定します。
+
+| 場所 | 項目 | 設定値 |
 |---|---|---|
-| Grab & Pose | Allow Grabbing | True |
-| Grab & Pose | Allow Posing | True |
-| Options | Parameter | 手順4でコピーしたパラメータ名を貼り付け |
+| **Grab & Pose** | Allow Grabbing | **True**（チェックを入れる） |
+| **Grab & Pose** | Allow Posing | **True**（チェックを入れる） |
+| **Options** | Parameter | **STEP 4 でコピーしたパラメータ名を貼り付け** |
 
 ![PhysBone の設定](images/physbone-settings.png)
 
-以上で導入は完了です。
+これで設定は完了です。
 
-## 動作を確認する
+</div>
+</div>
 
-Play モードで確認できます。
+<div class="step-item" markdown="1">
+<div class="step-item-head">
+<span class="step-num">STEP 7</span>
+<h3>Play モードで動作を確認する</h3>
+</div>
+<div class="step-body" markdown="1">
 
-**1. セーフティを解除する**
+1. **セーフティを解除する**:
+   アバターのエクスプレッションメニューから `HandGrenade_ON` を ON にします（誤操作防止のため初期状態は OFF です）。
+   ![メニューのセーフティ](images/menu-safety.png)
 
-アバターのメニューから `HandGrenade_ON` を ON にします。意図しない発火を防ぐため、既定では OFF です。
+2. **PhysBone を掴んで固定する**:
+   Game ビューで設定した PhysBone をマウスの右クリックで掴み、そのまま左クリックして固定（Posing）します。固定と同時に手榴弾の音とエフェクトが発生すれば成功です。
 
-![メニューのセーフティ](images/menu-safety.png)
+!!! warning "周囲の環境に配慮してください"
+    音と光のエフェクトが発生します。周囲の迷惑にならない範囲でご使用ください。使い終わったらメニューの `HandGrenade_ON` を OFF に戻しておくことを推奨します。
 
-**2. PhysBone を掴んで固定する**
+</div>
+</div>
 
-GameView で右クリックして設定した PhysBone を掴み、左クリックで固定します。固定するとパーティクルと音が発生します。
-
-!!! warning "使う場所と状況に配慮してください"
-    このギミックは音とパーティクルエフェクトが発生します。周囲の迷惑にならない範囲で使用してください。使い終わったらメニューの `HandGrenade_ON` を OFF に戻しておくと、意図しない発火を防げます。
+</div>
