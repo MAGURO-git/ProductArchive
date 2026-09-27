@@ -8,7 +8,7 @@
 VRChat ワールド用のイベント運営支援ギミック一式です。テレポートメニュー・インカム・一斉メッセージ・進行タイマーなどを、スタッフのSBSメニューにまとめて導入できます。
 </div>
 
-- 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/)
+- 商品ページ: [BOOTH](https://maguro-vrc.booth.pm/items/8682451)
 - 利用規約: [Staff Bridge System 利用規約（PDF）](https://drive.google.com/file/d/1Y1xBQFlrfcBY5iI4gYFHOwRgYQo4pm7a/view?usp=sharing)
 - サンプルワールド: [Staff Bridge System Sample（VRChat）](https://vrchat.com/home/world/wrld_01cbbb48-44ce-4761-9baa-6f4ef87fbbfd/info)
 

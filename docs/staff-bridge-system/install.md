@@ -69,10 +69,6 @@ VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`co
   </div>
 </div>
 
-## 既存のワールドへの後付け
-
-手順は同じです。配置後に参照が切れた場合は「診断・修復」で確認してください。
-
 ## ギミックを個別に追加する { #single-prefab }
 
 「Prefab を個別に置く」ページのボタンから、いくつでも追加できます。配置と同時に名簿へ接続されるため、あとから診断を実行する必要はありません。
