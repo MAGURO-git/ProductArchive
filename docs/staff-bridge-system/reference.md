@@ -462,7 +462,7 @@ GameObject の出し入れなら、同梱の [StaffObjectToggle](#object-toggle)
 !!! info "個数の上限"
     スタッフ判定を受け取るギミックは、1ワールドで合計 128個 までです。超えると Console にエラーが出て、超えた分だけスタッフ状態が更新されなくなります。
 
-### StaffOnlyButton（スタッフ専用ボタン）
+### StaffOnlyButton（スタッフ専用ボタン） { #staff-only-button }
 
 2つのモードがあります。
 
@@ -484,7 +484,9 @@ GameObject の出し入れなら、同梱の [StaffObjectToggle](#object-toggle)
 | 拒否メッセージ | string | `<color=#FF6060>スタッフ専用です</color>` | 拒否メッセージの内容 |
 | 拒否メッセージ表示秒 | float | 2 | 表示する秒数 |
 
-### StaffOnlyArea（スタッフゲート）
+コライダー制御モードでは、StaffRegistry が未設定のとき Collider を無効にしません。設定ミスで誰も押せなくなることを防ぐためです。対象コライダーや発火先が未設定の場合は、Inspector に警告が表示されます。
+
+### StaffOnlyArea（スタッフゲート） { #staff-only-area }
 
 スタッフ以外のときだけ壁のコライダーを有効にして、物理的に通れなくします。判定は各自のローカルで行われます。
 
@@ -493,18 +495,39 @@ GameObject の出し入れなら、同梱の [StaffObjectToggle](#object-toggle)
 | 壁コライダー | Collider | スタッフ以外を通さない壁（isTrigger は OFF）。未設定なら自分の Collider |
 | 壁の見た目 | Renderer | 任意。設定すると壁の有効・無効に合わせて表示も切り替わる |
 
-### StaffOnlyVisibleSelf（スタッフだけ見える）
+StaffRegistry が未設定のときは、壁を有効にしたままにします（誰も通れません）。
 
-自分と配下の Renderer / Collider / Canvas の有効・無効を切り替えます。SetActive は使わないため、Udon の動作や音は止まりません。
+壁コライダーの isTrigger が ON だと壁をすり抜けます。ON のときは Inspector に警告と **isTrigger を OFF にする** ボタンが表示されます。
+
+### StaffOnlyVisibleSelf（スタッフだけ見える） { #staff-only-visible-self }
+
+登録した Renderer / Collider / Canvas の有効・無効を切り替えます。SetActive は使わないため、Udon の動作や音は止まりません。
 
 | 項目 | 型 | 既定 | 内容 |
 |---|---|---|---|
 | スタッフに見せる | bool | ON | ON = スタッフのときだけ見える／OFF = スタッフ以外のときだけ見える |
+| 対象Renderer | Renderer[] | — | 切り替える Renderer |
+| 対象Collider | Collider[] | — | 切り替える Collider |
+| 対象Canvas | Canvas[] | — | 切り替える Canvas |
 
-!!! tip "完全に消したい場合"
-    音や配下ギミックの動作ごと止めたい場合は、`StaffOnlyVisible`（一括マネージャ）を空の GameObject に手動で付け、その配列に対象を登録してください。GameObject ごと SetActive で切り替わります。メニューからの設置口は用意していません（推奨の Self 版と紛らわしいため）。
+- 右クリックメニューから付けると、そのオブジェクト自身に付いている Renderer / Collider / Canvas が登録されます。配下のものは登録されません。
+- 配下のものも切り替えたい場合は、Inspector の **配下から追加** ボタンで登録してください。配下に別のギミックがある場合は、そのギミックのものも登録されるので、追加後に一覧を確認してください。
+- 隠す直前の有効・無効を覚えておき、表示に戻すときはその状態に戻します。元から無効だったものは無効のままです。
 
-### StaffOverheadMarker（頭上マーカー）
+!!! tip "音や配下ギミックごと止めたい場合"
+    右クリックメニューの **スタッフだけ見えるようにする > GameObject.SetActive 制御（丸ごと）** を使ってください。GameObject ごと SetActive で切り替わります。一括マネージャ（`StaffOnlyVisible`）が自動で作成されて対象が登録され、対象自身には `StaffOnlyVisibleTarget` が付きます。どのマネージャに制御されているかは、対象の Inspector で確認できます。
+
+### アクション部品（汎用呼び出し先） { #staff-actions }
+
+`StaffOnlyButton` の発火先呼び出しモードから呼び出す、単機能のコンポーネントです。サンプルシーンの `StaffBridgeSystem_SampleActions` に配線済みの見本があります。複製して対象を差し替えて使ってください。
+
+| コンポーネント | 呼び出しイベント | 内容 | 安全動作 |
+|---|---|---|---|
+| **StaffActionToggle** | `_Toggle` | 指定した GameObject の表示・非表示（SetActive）を切り替える | 対象未設定時は何もしない |
+| **StaffActionTeleport** | `_Teleport` | 指定した Transform の位置へプレイヤーをテレポートさせる | 目的地未設定時は何もしない |
+| **StaffActionSound** | `_PlaySound` | 指定した AudioSource の効果音を再生する | 音源未設定時は何もしない |
+
+### StaffOverheadMarker（頭上マーカー） { #overhead-marker }
 
 スタッフの頭上に目印を表示します。目印は常に自分のカメラの方を向きます（水平回転のみ。文字は直立を維持）。
 
@@ -514,7 +537,7 @@ GameObject の出し入れなら、同梱の [StaffObjectToggle](#object-toggle)
 | 頭上の高さ | float | 0.45 | 頭の何 m 上に出すか |
 | マーカー | GameObject[] | — | **必須**。目印オブジェクトのプール。要素数が同時表示できる上限になる（既定 16） |
 
-### StaffGrantSwitch（スタッフ切替スイッチ）
+### StaffGrantSwitch（スタッフ切替スイッチ） { #staff-grant-switch }
 
 インタラクトすると、押した本人のスタッフ状態が ON / OFF します。
 
@@ -524,7 +547,7 @@ GameObject の出し入れなら、同梱の [StaffObjectToggle](#object-toggle)
 | ON時テキスト | string | `<color=#00FF00>あなた: スタッフ ON</color>` | スタッフ ON 時の表示 |
 | OFF時テキスト | string | `<color=#AAAAAA>あなた: スタッフ以外</color>` | スタッフ OFF 時の表示 |
 
-### StaffPurgeSwitch（スタッフ一括解除スイッチ）
+### StaffPurgeSwitch（スタッフ一括解除スイッチ） { #staff-purge-switch }
 
 2回インタラクトすると、当日スタッフを全員分解除します。押せるのは常設スタッフで、かつ現在スタッフ ON の人だけです。スタッフ管理タブと同じ条件です。名簿に載っている常設スタッフは、自動ONの設定に関係なく解除されません。インスタンスに居ない人には届きません（[運用ガイド](operation.md#staff-detection) 参照）。
 
@@ -536,7 +559,7 @@ GameObject の出し入れなら、同梱の [StaffObjectToggle](#object-toggle)
 | 確認中テキスト | string | `<color=#FF6666>もう一度触れて確定</color>` | 1回目に触れた後の表示 |
 | 権限なしテキスト | string | `<color=#AAAAAA>常設スタッフのみ操作できます</color>` | 操作する権限が無い人が触れた時の表示 |
 
-### StaffListBoard（在室スタッフ一覧ボード）
+### StaffListBoard（在室スタッフ一覧ボード） { #staff-list-board }
 
 現在入室しているスタッフ名を TextMeshPro に表示します。
 

@@ -156,10 +156,11 @@
 
 | やりたいこと | 触る場所 |
 |---|---|
-| 既存のボタンをスタッフ限定にしたい | 対象を選んで右クリック > GameObject > MGR > Staff Bridge System > スタッフだけ押せるボタンにする |
+| 既存のボタンをスタッフ限定にしたい | 対象を選んで右クリック > GameObject > MGR > Staff Bridge System > **スタッフだけ押せるボタンにする** |
+| スタッフボタンで切替・テレポート・効果音を出したい | サンプルシーンの配線済み見本（`StaffBridgeSystem_SampleActions`）の `StaffActionToggle` / `StaffActionTeleport` / `StaffActionSound` を複製して使う → [リファレンス](reference.md#staff-actions) |
 | スタッフ以外を通さない壁を作りたい | 同メニューの **スタッフだけ通れる壁（ゲート）にする** |
-| スタッフにだけ見せたい／隠したい | 同メニューの **スタッフだけ見えるようにする** ／ **スタッフ以外だけ見える** |
-| 音ごと完全に止めたい | `StaffOnlyVisible`（一括マネージャ）を手動配置 → [リファレンス](reference.md#staff-only-objects) |
+| スタッフにだけ見せたい／隠したい | 同メニューの **スタッフだけ見えるようにする > Renderer・Collider 制御（標準）** ／ **スタッフ以外だけ見えるようにする** |
+| オブジェクトごと非表示にしたい（音も止めたい） | 同メニューの **スタッフだけ見えるようにする > GameObject.SetActive 制御（丸ごと）** → [リファレンス](reference.md#staff-only-objects) |
 | 押せなかったときの文言を変えたい | Inspector：`StaffOnlyButton` の **拒否メッセージ**（発火先呼び出しモードのみ表示される） |
 | 在室スタッフを掲示したい | 「Prefab を個別に置く」ページ > 在室スタッフ一覧ボード |
 | 頭上マーカーを全員に見せたい | Inspector：`StaffOverheadMarker` の **スタッフのみに見える** を OFF |
