@@ -38,7 +38,7 @@ VCC / ALCOM から [FukuroUdon](https://github.com/mimyquality/FukuroUdon)（`co
 </div>
 <div class="step-body" markdown="1">
 
-メニューバーの **Tools > MGR > Staff Bridge System > セットアップ** を開きます。
+メニューバーの **Tools > MGR > Staff Bridge System > セットアップ・カスタマイズ** を開きます。
 先頭に前提パッケージの不足が表示された場合は、「導入ページを開く」から追加してください。
 
 ![セットアップページ](images/setup-tab.png)
