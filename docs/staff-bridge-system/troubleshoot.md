@@ -15,7 +15,7 @@
 
 **対処**: VCC / ALCOM で導入してからシーンを再読み込みしてください。セットアップウィンドウの「導入ページを開く」ボタンからも配布元を開けます。
 
-**導入済みなのに出ない場合**: TMP Essentials が未インポートの可能性があります。`Assets/TextMesh Pro/` フォルダが無ければ、**Window > TextMeshPro > Import TMP Essential Resources** を実行してください。この状態でも診断は日本語フォントについて警告を出さないため、診断だけでは気づけません。詳しくは [導入](install.md#tmp-essentials) を参照してください。
+**導入済みなのに出ない場合**: TMP Essentials が未インポートの可能性があります。`Assets/TextMesh Pro/` フォルダが無ければ、**Window > TextMeshPro > Import TMP Essential Resources** を実行してください。この状態は診断でも「TMP Essentials（TextMesh Pro の初期リソース）」の警告として検出されます。詳しくは [導入](install.md#tmp-essentials) を参照してください。
 
 ---
 
@@ -144,7 +144,7 @@ StaffRegistry の「ログ出力する」が ON になっています。公開�
 
 BOOTH のメッセージ機能からご連絡ください。
 
-「診断・修復」ページの一番下にある 「サポートに送る情報」 で「状態レポートを作る」を押すと、調査に必要な情報が文章としてまとまります。「クリップボードにコピー」でコピーして、メッセージに貼り付けてください。
+セットアップ窓の「サポート」ページにある 「サポートに送る情報」 で「状態レポートを作る」を押すと、調査に必要な情報が文章としてまとまります。「クリップボードにコピー」でコピーして、メッセージに貼り付けてください。
 
 ![サポートに送る情報](images/doctor-support.png)
 
