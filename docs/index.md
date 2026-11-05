@@ -55,7 +55,7 @@ BOOTHショップ **[M.G.R Tech Creations](https://maguro-vrc.booth.pm/)** で�
 </div>
 
 <div class="product-card" markdown>
-[![Staff Bridge System](staff-bridge-system/images/icon.png){ .product-icon }](staff-bridge-system/index.md)
+[![Staff Bridge System](staff-bridge-system/images/thumbnail.jpg){ .product-icon }](staff-bridge-system/index.md)
 
 ### [Staff Bridge System](staff-bridge-system/index.md)
 
