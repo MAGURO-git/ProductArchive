@@ -40,19 +40,19 @@
 | 制作時 Unity | Unity 2022.3.22f1 |
 | 制作時 SDK | Worlds SDK 3（v1.2.0更新当時） |
 | ワールド容量 | 約180MB |
-| ライティング | [Bakery - GPU Lightmapper](https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218?locale=ja-JP) でベイク済み（未所持の場合はビルトインライトマッパー版シーンを使用可能） |
+| ライティング | [Bakery - GPU Lightmapper](https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218?locale=ja-JP) でベイク済み（未所持時はビルトイン版シーンを使用可） |
 | 主要シェーダー | [Filamented Standard for Unity](https://booth.pm/ja/items/3250389) |
 | 必須アセット | QvPen / VizVid / VRC Light Volumes / Visitors Info Board / Mochies Shaders（詳細は[導入](install.md)） |
 | プラットフォーム | PC 専用（Quest 実機での動作確認は行っていません） |
 
 ## ご購入・導入前の確認事項
 
-- **ギミックの動作保証・互換性について**:
-  本商品は制作時点の環境で動作確認を行っていますが、今後の最新 Worlds SDK 環境での継続的な追従アップデートは保証していません。
+- **ギミックの動作保証・互換性**:
+  制作時点の環境で動作確認済みです。将来の最新 Worlds SDK への継続的な追従アップデートは保証外です。
 - **追加テクスチャのダウンロード（MEGA）**:
-  高解像度テクスチャはファイル容量が大きいため、MEGAストレージに配置しています。購入データ同梱の「追加ファイルダウンロードリンク_v1.2.0.txt」に記載されたURLから取得してください。
-- **Bakery の有無に応じたシーン選択**:
-  Bakery をお持ちでない方は、同梱のビルトインライトマッパー版シーン（`GrayOasis_builtin.unity`）をご利用ください。
+  容量削減のため、高解像度テクスチャは外部ストレージ（MEGA）から取得します。購入データ同梱のテキストファイル記載の URL からダウンロードしてください。
+- **Bakery 未所持の場合**:
+  同梱のビルトインライトマッパー版シーン（`GrayOasis_builtin.unity`）をご利用ください。
 - **利用規約**:
   ワールドの利用条件は [利用規約](../terms.md) に準拠します。
 
