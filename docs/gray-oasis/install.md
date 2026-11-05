@@ -1,6 +1,6 @@
 # 導入
 
-新規のワールドプロジェクトへの導入手順です。[必要環境](index.md)を確認してから始めてください。
+[必要環境](index.md)を確認してから始めてください。
 
 <div class="step-container" markdown="1">
 
