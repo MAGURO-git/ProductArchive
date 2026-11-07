@@ -1,8 +1,6 @@
 site_name: M.G.R Tech Creations ドキュメント
 site_description: BOOTHショップ「M.G.R Tech Creations」販売物のマニュアル
 site_url: https://maguro-git.github.io/ProductArchive/
-repo_url: https://github.com/MAGURO-git/ProductArchive
-edit_uri: ""
 
 theme:
   name: material
