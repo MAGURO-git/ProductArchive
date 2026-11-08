@@ -73,6 +73,7 @@ nav:
       - トラブルシューティング: gray-oasis/troubleshoot.md
       - 使用アセット: gray-oasis/credits.md
       - 更新履歴: gray-oasis/changelog.md
+      - 開発状況: gray-oasis/roadmap.md
   - Japan Classroom:
       - japan-classroom/index.md
       - 導入: japan-classroom/install.md
