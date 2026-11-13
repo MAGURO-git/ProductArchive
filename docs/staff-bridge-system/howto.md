@@ -147,7 +147,7 @@
 | 入室直後に古いメッセージを出したくない | Inspector：`StaffBroadcast` の **表示秒**（既定 6）。これより古い受信は入室時に出しません |
 | 受信ログの件数を変えたい | Inspector：`StaffBroadcast` の **履歴件数**（既定 16） |
 | 自分宛の目印を変えたい | Inspector：`StaffBroadcast` の **自分宛プレフィックス** |
-| 宛先グループの名前を「受付」などにしたい | Inspector：`StaffMsgGroups` の **グループ名**（既定 A班〜H班）。名前だけなら再生成は不要。数を変えるときはメニュー構成ページからの再構築が要ります |
+| 宛先グループの名前を「受付」などにしたい | Inspector：`StaffMsgGroups` の **グループ名**（既定 A班〜H班）。名前だけなら作り直しは不要。数を変えるときは、メニュー構成ページから作り直してください |
 
 スタッフ以外へメッセージを出す機能はありません（送信先はスタッフのみ）。
 
@@ -168,7 +168,7 @@
 | やりたいこと | 触る場所 |
 |---|---|
 | 既存のボタンをスタッフ限定にしたい | 対象を選んで右クリック > GameObject > MGR > Staff Bridge System > **スタッフだけ押せるボタンにする** |
-| スタッフボタンで切替・テレポート・効果音を出したい | サンプルシーンの配線済み見本（`StaffBridgeSystem_SampleActions`）の `StaffActionToggle` / `StaffActionTeleport` / `StaffActionSound` を複製して使う → [リファレンス](reference.md#staff-actions) |
+| スタッフボタンで切替・テレポート・効果音を出したい | サンプルシーンの設定済みの見本（`StaffBridgeSystem_SampleActions`）の `StaffActionToggle` / `StaffActionTeleport` / `StaffActionSound` を複製して使う → [リファレンス](reference.md#staff-actions) |
 | スタッフ以外を通さない壁を作りたい | 同メニューの **スタッフだけ通れる壁（ゲート）にする** |
 | スタッフにだけ見せたい／隠したい | 同メニューの **スタッフだけ見えるようにする > Renderer・Collider 制御（標準）** ／ **スタッフ以外だけ見えるようにする** |
 | オブジェクトごと非表示にしたい（音も止めたい） | 同メニューの **スタッフだけ見えるようにする > GameObject.SetActive 制御（丸ごと）** → [リファレンス](reference.md#staff-only-objects) |
