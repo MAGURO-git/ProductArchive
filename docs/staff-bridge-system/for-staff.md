@@ -43,6 +43,10 @@
 
 [スイッチ](usage.md#switch)
 
+## プロップインベントリ { #prop }
+
+[プロップインベントリ](usage.md#prop)
+
 ## 設定（自分だけの設定） { #_15 }
 
 [設定（自分だけの設定）](usage.md#settings)
