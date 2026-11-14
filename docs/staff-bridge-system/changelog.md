@@ -1,4 +1,4 @@
-# Staff Bridge System 更新履歴
+# 更新履歴
 
 ## 1.2.0（公開日未定）
 
