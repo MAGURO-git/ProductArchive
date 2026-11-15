@@ -1,6 +1,6 @@
 # 自作ギミックとつなぐ
 
-UdonSharp や Udon Graph で自作ギミックを書く方向けのページです。コードを書かずに使う場合は [設定リファレンス](reference.md) だけで足ります。
+UdonSharpやUdon Graphで自作ギミックを書く方向けのページです。コードを書かずに使う場合は [設定リファレンス](reference.md) だけで足ります。
 
 外部連携の入口は2つです。
 
@@ -11,14 +11,14 @@ UdonSharp や Udon Graph で自作ギミックを書く方向けのページで�
 
 ## スイッチの発火は「押した人のクライアントでローカル1回」 { #fire-contract }
 
-ボタンを押すと、押した人のクライアントで発火先の UdonBehaviour に `SendCustomEvent` が1回呼ばれます。SBS がやるのはここまでです。
+ボタンを押すと、押した人のクライアントで発火先のUdonBehaviourに `SendCustomEvent` が1回呼ばれます。SBSがやるのはここまでです。
 
-- 引数は渡せません（SendCustomEvent の仕様）
-- 他のクライアントでは実行されません。SBS は発火先の Owner も変更しません
-- 発火の直前にスタッフ判定を再チェックし、連打は 0.7 秒のクールダウンで弾きます
-- 「誰がいつどのスイッチを押したか」の表示だけは SBS 側でグローバル同期し、レイトジョイナーにも見えます
+- 引数は渡せません（SendCustomEventの仕様）
+- 他のクライアントでは実行されません。SBSは発火先のOwnerも変更しません
+- 発火の直前にスタッフ判定を再チェックし、連打は0.7秒のクールダウンで弾きます
+- 「誰がいつどのスイッチを押したか」の表示だけはSBS側でグローバル同期し、レイトジョイナーにも見えます
 - グローバルにするかどうかは発火先の実装が決めます
-- 全員のクライアントで実行する発火はありません。同期する受け側と組み合わさると、全員が Owner を取り合って人数分の同期が走るためです
+- 全員のクライアントで実行する発火はありません。同期する受け側と組み合わさると、全員がOwnerを取り合って人数分の同期が走るためです
 - ネットワークに乗るのは「押した記録」と「受け手の同期変数」の2つだけ。人数が増えても送信コストは変わりません
 
 <div markdown>
@@ -36,9 +36,9 @@ UdonSharp や Udon Graph で自作ギミックを書く方向けのページで�
 
 - 同期変数の現在値は、レイトジョイナー・入り直しにも届きます（[Late Joiners](https://creators.vrchat.com/worlds/udon/networking/late-joiners/)）
 - `SendCustomNetworkEvent(All, ...)` はその瞬間にいた人にしか届かず、レイトジョイナーには再生されません（[Network Events](https://creators.vrchat.com/worlds/udon/networking/events/)）。状態を持つギミックには不向きです
-- 書き込み前に SetOwner で所有権を取ります。Owner が退室しても所有権は自動で移り（[Ownership](https://creators.vrchat.com/worlds/udon/networking/ownership/)）、値は保たれます
+- 書き込み前にSetOwnerで所有権を取ります。Ownerが退室しても所有権は自動で移り（[Ownership](https://creators.vrchat.com/worlds/udon/networking/ownership/)）、値は保たれます
 
-GameObject の出し入れなら、同梱の [StaffObjectToggle](reference.md#object-toggle)（同期する=ON）がこの作りです。自作するときの骨組みは次のとおりです。
+GameObjectの出し入れなら、同梱の [StaffObjectToggle](reference.md#object-toggle)（同期する=ON）がこの作りです。自作するときの骨組みは次のとおりです。
 
 ```csharp
 using UdonSharp;
@@ -77,8 +77,8 @@ public class GateReceiver : UdonSharpBehaviour
 }
 ```
 
-!!! warning "Owner を取った直後の1回は配られないことがあります"
-    移譲が済む前の RequestSerialization は落ちることがあり、初めて押した人の変化だけ伝わらない形で現れます。同梱の StaffObjectToggle は 0.5 秒後にもう一度呼んで防いでいます。
+!!! warning "Ownerを取った直後の1回は配られないことがあります"
+    移譲が済む前のRequestSerializationは落ちることがあり、初めて押した人の変化だけ伝わらない形で現れます。同梱のStaffObjectToggleは0.5秒後にもう一度呼んで防いでいます。
 
 ローカルのままでよいのは、押した本人にだけ見せるもの（確認用の表示など）です。
 
@@ -88,7 +88,7 @@ public class GateReceiver : UdonSharpBehaviour
 
 ## 重要な操作は受け側でも検証する { #validate-on-receiver }
 
-Udon のイベントはエントリポイントとして公開されるため、スイッチ以外からも呼べます。入退場のロック解除のような重大な操作は、受け側でもスタッフ判定を確認してください。
+Udonのイベントはエントリポイントとして公開されるため、スイッチ以外からも呼べます。入退場のロック解除のような重大な操作は、受け側でもスタッフ判定を確認してください。
 
 ```csharp
 using MGR.StaffBridgeSystem;
@@ -136,7 +136,7 @@ public class StaffLamp : UdonSharpBehaviour
 }
 ```
 
-登録数の上限は128個です。超えた分は登録されず、Console にエラーが出ます。
+登録数の上限は128個です。超えた分は登録されず、Consoleにエラーが出ます。
 
 ## 制約 { #limits }
 
@@ -153,7 +153,7 @@ public class StaffLamp : UdonSharpBehaviour
 
 ## 公式リファレンス { #official-refs }
 
-同期の説明は VRChat 公式の次のドキュメントに基づいています。
+同期の説明はVRChat公式の次のドキュメントに基づいています。
 
 - [Networking 全般](https://creators.vrchat.com/worlds/udon/networking/)
 - [同期変数と Manual Sync（RequestSerialization / OnDeserialization）](https://creators.vrchat.com/worlds/udon/networking/variables/)
