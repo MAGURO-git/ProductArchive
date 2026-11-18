@@ -47,16 +47,10 @@ VCC（VRChat Creator Companion）または ALCOM から、VRChat ワールド用
 </div>
 <div class="step-body" markdown="1">
 
-1. 購入データの `GRAY_OASIS_v1.2.1_part1.zip` と `GRAY_OASIS_v1.2.1_part2.zip` を、同じフォルダに展開します。`GRAY_OASIS_v1.2.1.unitypackage.001` と `.002` ができます。
-2. 展開したフォルダで、エクスプローラーの**アドレスバー**に `cmd` と入力します。
-3. **Enter** キーを押して、コマンドプロンプトを開きます。
-4. 次のコマンドを実行して、2つのファイルを1つに結合します。
-
-    ```
-    copy /b GRAY_OASIS_v1.2.1.unitypackage.001 + GRAY_OASIS_v1.2.1.unitypackage.002 GRAY_OASIS_v1.2.1.unitypackage
-    ```
-
-5. 結合した `GRAY_OASIS_v1.2.1.unitypackage` を、プロジェクトにインポートします。
+1. [7-Zip](https://www.7-zip.org/) をインストールします。7-Zip は無料の展開ソフトです。すでにインストールしている場合は、手順 2 に進みます。
+2. 購入データの `GRAY_OASIS_v1.2.1_1of2.zip` と `GRAY_OASIS_v1.2.1_2of2.zip` を、同じフォルダに展開します。`GRAY_OASIS_v1.2.1.zip.001` と `GRAY_OASIS_v1.2.1.zip.002` ができます。
+3. `GRAY_OASIS_v1.2.1.zip.001` を右クリックして、7-Zip の**ここに展開**を選びます。メニューに 7-Zip が見当たらない場合は、**その他のオプションを表示**を選びます。
+4. できた `GRAY_OASIS_v1.2.1.unitypackage` を、プロジェクトにインポートします。
 
 シーンとテクスチャは、すべてこのパッケージに入っています。
 
