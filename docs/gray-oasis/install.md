@@ -47,9 +47,15 @@ VCC（VRChat Creator Companion）または ALCOM から、VRChat ワールド用
 </div>
 <div class="step-body" markdown="1">
 
-1. 購入データの `GRAY_OASIS_v1.2.1.zip.001` と `.zip.002` を、同じフォルダに置きます。
-2. 7-Zip で `.zip.001` を展開します。
-3. できた `GRAY_OASIS_v1.2.1.unitypackage` を、プロジェクトにインポートします。
+1. 購入データの `GRAY_OASIS_v1.2.1_part1.zip` と `GRAY_OASIS_v1.2.1_part2.zip` を、同じフォルダに展開します。`GRAY_OASIS_v1.2.1.unitypackage.001` と `.002` ができます。
+2. 展開したフォルダで、エクスプローラーのアドレスバーに `cmd` と入力して **Enter** を押し、コマンドプロンプトを開きます。
+3. 次のコマンドを実行して、2つのファイルを1つにまとめます。
+
+    ```
+    copy /b GRAY_OASIS_v1.2.1.unitypackage.001 + GRAY_OASIS_v1.2.1.unitypackage.002 GRAY_OASIS_v1.2.1.unitypackage
+    ```
+
+4. できた `GRAY_OASIS_v1.2.1.unitypackage` を、プロジェクトにインポートします。
 
 シーンとテクスチャは、すべてこのパッケージに入っています。
 
@@ -67,6 +73,9 @@ VCC（VRChat Creator Companion）または ALCOM から、VRChat ワールド用
 
 - Bakery版: `Assets/MGR/GrayOasis/GrayOasis.unity`
 - ビルトイン版: `Assets/MGR/GrayOasis/GrayOasis_builtinLightmapper.unity`
+
+!!! note "ビルトイン版は、導入後に再ベイクします"
+    ビルトイン版のライトマップは、Bakery が入った環境でベイクしています。モデルのライトマップ用 UV は Bakery の有無で変わるため、Bakery が入っていない環境では、一部のモデルでライトマップがずれて見えます。導入後に、[ライティングの再ベイク](customize.md)の手順で、再ベイクしてください。Bakery 版のシーンは、再ベイクが不要です。
 
 ![シーンの場所](images/scene-location.png)
 

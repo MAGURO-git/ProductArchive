@@ -21,7 +21,7 @@ Bakery - GPU Lightmapper をご使用の場合の推奨設定です。
 
 ## ビルトインライトマッパーでベイクする場合
 
-Bakery をお持ちでない場合は、Unity 標準の Progressive CPU/GPU Lightmapper を使用します。
+Bakery をお持ちでない場合は、Unity 標準の Progressive CPU/GPU Lightmapper を使用します。ビルトインライトマッパー版のシーンは、導入後に、この手順で再ベイクします。
 
 1. **Window > Rendering > Lighting** を開きます。
 2. **Scene** タブで **Lightmapping Settings** を確認します（**Mixed Lighting**、**Progressive GPU** を推奨）。
