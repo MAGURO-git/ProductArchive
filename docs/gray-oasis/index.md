@@ -38,8 +38,7 @@
 | 項目 | 内容 |
 |---|---|
 | 制作時 Unity | Unity 2022.3.22f1 |
-| 制作時 SDK | Worlds SDK 3（v1.2.0更新当時） |
-| ワールド容量 | 約180MB |
+| 制作時 SDK | Worlds SDK 3（3.10.6） |
 | ライティング | [Bakery - GPU Lightmapper](https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218?locale=ja-JP) でベイク済み（未所持時はビルトイン版シーンを使用可） |
 | 主要シェーダー | [Filamented Standard for Unity](https://booth.pm/ja/items/3250389) |
 | 必須アセット | QvPen / VizVid / VRC Light Volumes / Visitors Info Board / Mochies Shaders（詳細は[導入](install.md)） |
