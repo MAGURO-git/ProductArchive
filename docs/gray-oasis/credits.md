@@ -15,7 +15,6 @@
 | [VRChat] Xiexe's Unity Shaders（previously XSFur） | [BOOTH](https://booth.pm/ja/items/1084711) |
 | RainyGlassShader | [toadstorm/RainyGlassShader](https://github.com/toadstorm/RainyGlassShader) |
 | Filamented Standard for Unity | [BOOTH](https://booth.pm/ja/items/3250389) |
-| Dirty-Sci-Fi-Hologram | [mandersson1024/Dirty-Sci-Fi-Hologram-Shader](https://github.com/mandersson1024/Dirty-Sci-Fi-Hologram-Shader) |
 | Mochies-Unity-Shaders | [MochiesCode/Mochies-Unity-Shaders](https://github.com/MochiesCode/Mochies-Unity-Shaders) |
 
 VRChat のワールドとしてアップロードする以外の用途で使う場合は、各アセットの利用規約を必ず確認してください。
