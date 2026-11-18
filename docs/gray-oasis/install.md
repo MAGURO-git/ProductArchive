@@ -7,7 +7,7 @@
 <div class="step-item" markdown="1">
 <div class="step-item-head">
 <span class="step-num">STEP 1</span>
-<h3>プロジェクトを作成する</h3>
+<h3>VRChat ワールド用プロジェクトの作成</h3>
 </div>
 <div class="step-body" markdown="1">
 
@@ -19,7 +19,7 @@ VCC（VRChat Creator Companion）または ALCOM から、VRChat ワールド用
 <div class="step-item" markdown="1">
 <div class="step-item-head">
 <span class="step-num">STEP 2</span>
-<h3>必須アセットを導入する</h3>
+<h3>必須アセット（QvPen、VizVid など）の導入</h3>
 </div>
 <div class="step-body" markdown="1">
 
@@ -43,13 +43,12 @@ VCC（VRChat Creator Companion）または ALCOM から、VRChat ワールド用
 <div class="step-item" markdown="1">
 <div class="step-item-head">
 <span class="step-num">STEP 3</span>
-<h3>unitypackage をインポートする</h3>
+<h3>取り出した unitypackage のインポート</h3>
 </div>
 <div class="step-body" markdown="1">
 
-1. 購入データの `GRAY_OASIS_v1.2.1_1of2.zip` と `GRAY_OASIS_v1.2.1_2of2.zip` を、同じフォルダに展開します。`GRAY_OASIS_v1.2.1.zip.001` と `GRAY_OASIS_v1.2.1.zip.002` ができます。
-2. `GRAY_OASIS_v1.2.1.zip.001` を、7-Zip や WinRAR など、分割した zip に対応した展開ソフトで展開します。Windows の標準の機能では、展開できません。`GRAY_OASIS_v1.2.1.unitypackage` ができます。
-3. できた `GRAY_OASIS_v1.2.1.unitypackage` を、プロジェクトにインポートします。
+1. 購入データの `GRAY_OASIS_v1.2.1_展開方法.pdf` の手順で、2つの zip から `GRAY_OASIS_v1.2.1.unitypackage` を取り出します。
+2. 取り出した `GRAY_OASIS_v1.2.1.unitypackage` を、プロジェクトにインポートします。
 
 シーンとテクスチャは、すべてこのパッケージに入っています。
 
@@ -59,7 +58,7 @@ VCC（VRChat Creator Companion）または ALCOM から、VRChat ワールド用
 <div class="step-item" markdown="1">
 <div class="step-item-head">
 <span class="step-num">STEP 4</span>
-<h3>シーンを開く</h3>
+<h3>シーンの選択（Bakery 版 / ビルトインライトマッパー版）</h3>
 </div>
 <div class="step-body" markdown="1">
 
