@@ -14,9 +14,6 @@ Bakery - GPU Lightmapper を導入している場合の推奨設定です。
 2. **Render Mode** や **Resolution** をシーンの規模に合わせて調整します（既定値は同梱設定を参照）。
 3. **Render** を実行してベイクを開始します。
 
-!!! warning "VRC Light Volumes との併用"
-    VRC Light Volumes を配置している場合、Bakery でのベイク完了後に VRC Light Volumes のプローブ生成・ベイク処理もあわせて実行してください。
-
 ---
 
 ## ビルトインライトマッパーでベイクする場合
@@ -24,5 +21,4 @@ Bakery - GPU Lightmapper を導入している場合の推奨設定です。
 Bakery を導入していない場合は、Unity 標準の Progressive CPU/GPU Lightmapper を使用します。ビルトインライトマッパー版のシーンは、導入後に、この手順で再ベイクします。
 
 1. **Window > Rendering > Lighting** を開きます。
-2. **Scene** タブで **Lightmapping Settings** を確認します（**Mixed Lighting**、**Progressive GPU** を推奨）。
-3. **Generate Lighting** を実行してベイクを開始します。
+2. **Generate Lighting** を実行してベイクを開始します。
