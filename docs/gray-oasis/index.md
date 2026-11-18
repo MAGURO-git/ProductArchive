@@ -39,25 +39,25 @@
 |---|---|
 | 制作時 Unity | Unity 2022.3.22f1 |
 | 制作時 SDK | Worlds SDK 3（3.10.6） |
-| ライティング | [Bakery - GPU Lightmapper](https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218?locale=ja-JP) でベイク済み（未所持時はビルトイン版シーンを使用可） |
+| ライティング | [Bakery - GPU Lightmapper](https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218?locale=ja-JP) でベイク済み（Bakery を導入していない場合は、ビルトインライトマッパー版のシーンを使用可） |
 | 主要シェーダー | [Filamented Standard for Unity](https://booth.pm/ja/items/3250389) |
-| 必須アセット | QvPen / VizVid / VRC Light Volumes / Visitors Info Board / Mochies Shaders（詳細は[導入](install.md)） |
+| 必須アセット | QvPen / VizVid / VRC Light Volumes / Visitors Information Board / Mochies Shaders（詳細は[導入](install.md)） |
 | プラットフォーム | PC 専用（Quest 実機での動作確認は行っていません） |
 
 ## ご購入・導入前の確認事項
 
 - **ギミックの動作保証・互換性**:
   制作時点の環境で動作確認済みです。将来の最新 Worlds SDK への継続的な追従アップデートは保証外です。
-- **Bakery 未所持の場合**:
+- **Bakery を導入していない場合**:
   同梱のビルトインライトマッパー版シーン（`GrayOasis_builtinLightmapper.unity`）を使用できます。導入後に、ライトマップの再ベイクが必要です（[ライティングの再ベイク](customize.md)）。
 - **利用規約**:
   ワールドの利用条件は [利用規約](../terms.md) に準拠します。
 
 ## ドキュメント一覧
 
-- [導入ガイド](install.md) — 必須アセットの準備、パッケージのインポート、シーンの展開とアップロード手順
+- [導入](install.md) — 必須アセットの準備、パッケージのインポート、シーンの展開とアップロード手順
 - [ギミック一覧](gimmicks.md) — 各スイッチ・ミラー・ビデオプレイヤーの位置と操作仕様
-- [ライティング調整](customize.md) — Bakery やビルトインでの再ベイク手順
+- [ライティングの再ベイク](customize.md) — Bakery とビルトインライトマッパーでの再ベイク手順
 - [トラブルシューティング](troubleshoot.md) — マテリアルがピンク色になる場合と、部屋が暗い場合の対処
 - [使用アセット](credits.md) — 同梱・使用アセットのクレジット
 - [更新履歴](changelog.md) — バージョン履歴

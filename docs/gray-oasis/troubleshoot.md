@@ -17,5 +17,5 @@ GRAY OASIS の導入や改変時に発生しやすい問題と、その解決策
 **原因**: Bakery を導入していない環境で、Bakery版のシーンを開いている可能性があります。
 
 **対処**:
-1. Bakery をお持ちでない場合は、`Assets/MGR/GrayOasis/GrayOasis_builtinLightmapper.unity`（ビルトインライトマッパー版シーン）を開きます。
+1. Bakery を導入していない場合は、`Assets/MGR/GrayOasis/GrayOasis_builtinLightmapper.unity`（ビルトインライトマッパー版シーン）を開きます。
 2. それでも暗い場合は、**Window > Rendering > Lighting** から **Generate Lighting** を実行してライトマップを再生成します。

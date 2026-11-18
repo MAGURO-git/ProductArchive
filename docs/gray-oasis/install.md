@@ -23,7 +23,7 @@ VCC（VRChat Creator Companion）または ALCOM から、VRChat ワールド用
 </div>
 <div class="step-body" markdown="1">
 
-ワールド内のギミックやシェーダーが参照しているため、パッケージをインポートする前にすべて導入してください。
+ワールド内のギミックやシェーダーが参照しているため、パッケージをインポートする前に、次のアセットを導入してください。Bakery は任意です。
 
 | アセット | 用途 | 入手先 |
 |---|---|---|
@@ -34,8 +34,8 @@ VCC（VRChat Creator Companion）または ALCOM から、VRChat ワールド用
 | Mochies-Unity-Shaders | 水・エフェクト用シェーダー | [GitHub](https://github.com/MochiesCode/Mochies-Unity-Shaders) |
 | Bakery - GPU Lightmapper | ライティングベイク（任意） | [Unity Asset Store](https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218?locale=ja-JP) |
 
-!!! tip "Bakery をお持ちでない場合"
-    Bakery をお持ちでない場合は、同じパッケージに入っているビルトインライトマッパー版のシーンを使用できます。
+!!! tip "Bakery を導入していない場合"
+    Bakery を導入していない場合は、同じパッケージに入っているビルトインライトマッパー版のシーンを使用できます。
 
 </div>
 </div>
@@ -48,14 +48,15 @@ VCC（VRChat Creator Companion）または ALCOM から、VRChat ワールド用
 <div class="step-body" markdown="1">
 
 1. 購入データの `GRAY_OASIS_v1.2.1_part1.zip` と `GRAY_OASIS_v1.2.1_part2.zip` を、同じフォルダに展開します。`GRAY_OASIS_v1.2.1.unitypackage.001` と `.002` ができます。
-2. 展開したフォルダで、エクスプローラーのアドレスバーに `cmd` と入力して **Enter** を押し、コマンドプロンプトを開きます。
-3. 次のコマンドを実行して、2つのファイルを1つにまとめます。
+2. 展開したフォルダで、エクスプローラーの**アドレスバー**に `cmd` と入力します。
+3. **Enter** キーを押して、コマンドプロンプトを開きます。
+4. 次のコマンドを実行して、2つのファイルを1つに結合します。
 
     ```
     copy /b GRAY_OASIS_v1.2.1.unitypackage.001 + GRAY_OASIS_v1.2.1.unitypackage.002 GRAY_OASIS_v1.2.1.unitypackage
     ```
 
-4. できた `GRAY_OASIS_v1.2.1.unitypackage` を、プロジェクトにインポートします。
+5. 結合した `GRAY_OASIS_v1.2.1.unitypackage` を、プロジェクトにインポートします。
 
 シーンとテクスチャは、すべてこのパッケージに入っています。
 
@@ -71,11 +72,11 @@ VCC（VRChat Creator Companion）または ALCOM から、VRChat ワールド用
 
 **Project** ウィンドウから次のシーンを開きます。
 
-- Bakery版: `Assets/MGR/GrayOasis/GrayOasis.unity`
-- ビルトイン版: `Assets/MGR/GrayOasis/GrayOasis_builtinLightmapper.unity`
+- Bakery 版: `Assets/MGR/GrayOasis/GrayOasis.unity`
+- ビルトインライトマッパー版: `Assets/MGR/GrayOasis/GrayOasis_builtinLightmapper.unity`
 
-!!! note "ビルトイン版は、導入後に再ベイクします"
-    ビルトイン版のライトマップは、Bakery が入った環境でベイクしています。モデルのライトマップ用 UV は Bakery の有無で変わるため、Bakery が入っていない環境では、一部のモデルでライトマップがずれて見えます。導入後に、[ライティングの再ベイク](customize.md)の手順で、再ベイクしてください。Bakery 版のシーンは、再ベイクが不要です。
+!!! note "ビルトインライトマッパー版は、導入後に再ベイクします"
+    ビルトインライトマッパー版のライトマップは、Bakery を導入した環境でベイクしています。モデルのライトマップ用 UV は、Bakery の導入の有無で変わります。そのため、Bakery を導入していない環境では、一部のモデルでライトマップがずれて見えます。導入後に、[ライティングの再ベイク](customize.md)の手順で、再ベイクしてください。Bakery 版のシーンは、再ベイクが不要です。
 
 ![シーンの場所](images/scene-location.png)
 
